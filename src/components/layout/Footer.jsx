@@ -1,0 +1,195 @@
+import React from "react";
+import Link from "next/link";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div>
+            <Link href="/" className="inline-block mb-4">
+              <span className="text-2xl font-bold text-white">
+                Agri<span className="text-green-400">Grow</span>
+              </span>
+            </Link>
+            <p className="text-gray-300 mb-6">
+              Quality poultry farming with sustainable practices. Providing the freshest eggs and premium chicken products.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-green-400 transition-colors"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-green-400 transition-colors"
+              >
+                <Twitter size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-green-400 transition-colors"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-green-400 transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">
+              Quick Links
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Our Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">
+              Our Services
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Egg Production
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Meat Distribution
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Poultry Supply
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Farm Consulting
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Organic Feed
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">
+              Contact Us
+            </h3>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <MapPin
+                  size={20}
+                  className="mr-2 mt-1 text-green-400 flex-shrink-0"
+                />
+                <span className="text-gray-300">
+                  123 Farm Road, Ife, Osun, Nigeria
+                </span>
+              </li>
+              <li className="flex items-center">
+                <Phone
+                  size={20}
+                  className="mr-2 text-green-400 flex-shrink-0"
+                />
+                <span className="text-gray-300">(234) 81688016104</span>
+              </li>
+              <li className="flex items-center">
+                <Mail
+                  size={20}
+                  className="mr-2 text-green-400 flex-shrink-0"
+                />
+                <span className="text-gray-300">info@company.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Company. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
