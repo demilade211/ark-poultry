@@ -65,7 +65,7 @@ const WhyChooseUsSection = () => {
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
               <video
                 className="w-full h-full object-cover"
-                src="/videos/vid.mp4"
+                // src="/videos/vid.mp4"
                 controls
               />
             </div>
