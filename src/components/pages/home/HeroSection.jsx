@@ -51,7 +51,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[100vh] overflow-hidden">
+    <section className="relative w-full h-[75vh] sm:h-[100vh] overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -76,14 +76,14 @@ const HeroSection = () => {
               <div className="flex items-center mx-auto sm:mx-0 flex-col sm:flex-row gap-3">
                 <Link
                   href={slide.buttonLink}
-                  className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
+                  className="inline-block px-8 py-3 bg-[#d57315] text-white font-medium hover:bg-transparent border-2 border-[#d57315] hover:border-white transition-colors"
                 >
                   {slide.buttonText}
                 </Link>
 
                 <Link
                   href={slide.buttonLink}
-                  className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
+                  className="inline-block px-8 py-3 bg-transparent text-white font-medium hover:bg-[#d57315] transition-colors border-2 hover:border-[#d57315] border-white"
                 >
                   {slide.buttonText}
                 </Link>

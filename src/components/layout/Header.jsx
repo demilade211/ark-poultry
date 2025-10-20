@@ -21,27 +21,27 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
+    { name: "HOME", path: "/" },
+    { name: "ABOUT", path: "/about" },
+    { name: "SERVICES", path: "/services" },
     // { name: "Blog", path: "/blog" },
-    { name: "Contact", path: "/contact" },
+    { name: "CONTACT", path: "/contact" },
   ];
 
   return (
     <>
-      <div className="hidden md:flex items-center pl-23 2xl:pl-4 justify-between h-13">
+      <div className="hidden md:flex items-center bg-[#232323] pl-12 2xl:pl-4 justify-between h-13">
         <span className="flex">
           <p>Your Trusted 24 Hours Service Provider!</p>
         </span>
         <span className="flex items-center h-full">
           <span className="flex items-center gap-5 mr-4">
-            <Facebook size={24} />
-            <Twitter size={24} />
-            <Mail size={24} />
-            <Linkedin size={24} />
+            <Facebook size={18} />
+            <Twitter size={18} />
+            <Mail size={18} />
+            <Linkedin size={18} />
           </span>
-          <span className="bg-green-600 flex gap-2 items-center h-full pl-5 pr-4 md:pr-23 xl:pr-4"><Phone size={24} /> <p>Talk To Expert : 0 (143) 456 7897</p></span>
+          <span className="bg-[#d57315] flex gap-2 items-center h-full pl-5 pr-12 22xl:pr-4"><Phone size={18} /> <p>Talk To Expert : 0 (143) 456 7897</p></span>
         </span>
       </div>
 
@@ -52,7 +52,7 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="hidden md:flex items-center">
-            <span className="text-2xl font-bold text-green-700">
+            <span className="text-2xl font-bold text-[#d57315]">
               Poul<span className="text-green-500">try</span>
             </span>
           </Link>
@@ -63,8 +63,8 @@ const Header = () => {
               <Link
                 key={link.name}
                 href={link.path}
-                className={`text-lg font-medium transition-colors hover:text-green-600 ${
-                  pathname === link.path ? "text-green-600" : "text-gray-700"
+                className={`text-lg font-medium transition-colors hover:text-[#d57315] ${
+                  pathname === link.path ? "text-[#d57315]" : "text-gray-700"
                 }`}
               >
                 {link.name}
@@ -124,8 +124,8 @@ const Header = () => {
                 <Link
                   key={link.name}
                   href={link.path}
-                  className={`text-base font-medium transition-colors hover:text-green-600 ${
-                    pathname === link.path ? "text-green-600" : "text-gray-700"
+                  className={`text-base font-medium transition-colors hover:text-[#d57315] ${
+                    pathname === link.path ? "text-[#d57315]" : "text-gray-700"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -135,7 +135,7 @@ const Header = () => {
 
               <Link
                 href="/contact"
-                className="inline-block px-5 py-2.5 rounded-md bg-green-600 text-white font-medium hover:bg-green-700 transition-colors"
+                className="inline-block px-5 py-2.5 rounded-md bg-[#d57315] text-white font-medium hover:bg-green-700 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Quote

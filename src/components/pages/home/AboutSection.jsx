@@ -16,13 +16,13 @@ const AboutSection = () => {
                 className="w-full h-auto sm:h-[100vh] object-cover"
               />
             </div>
-            {/* <div className="absolute -bottom-6 -right-6 bg-green-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
+            {/* <div className="absolute -bottom-6 -right-6 bg-[#d57315] text-white p-6 rounded-lg shadow-lg hidden md:block">
               <p className="text-3xl font-bold">25+</p>
               <p className="text-sm">Years of Experience</p>
             </div> */}
           </div>
           <div>
-            <h2 className="text-md font-bold text-green-600 mb-2">ABOUT US</h2>
+            <h2 className="text-md font-bold text-[#d57315] mb-2">ABOUT US</h2>
             <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
               Leading The Way In Agricultural Innovation
             </h3>
@@ -35,30 +35,30 @@ const AboutSection = () => {
             </p>
             <div className="flex md:items-center justify-left lg:justify-between flex-col lg:flex-row w-full lg:w-[80%] md:p-10 relative lg:absolute lg:right-8 lg:bottom-[13%] h-full lg:h-auto bg-white lg:shadow-md">
               <div className="flex items-center gap-2">
-                <MessageCircleMore className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+                <MessageCircleMore className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>
-                  <h3 className="text-[32px] text-gray-700">+234 8168 0161 04</h3>
-                  <p className="text-gray-700">Get A Free Estimate</p>
+                  <h3 className="text-[20px] md:text-[25px] font-bold text-gray-700">+234 8168 0161 04</h3>
+                  <p className="text-gray-400 font-semibold">Get A Free Estimate</p>
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <UserStar className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+                <UserStar className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>
-                  <h3 className="text-[32px] text-gray-700">+123 4567 894</h3>
-                  <p className="text-gray-700">Sustainable farming practices</p>
+                  <h3 className="text-[20px] md:text-[25px] font-bold text-gray-700">+123 4567 894</h3>
+                  <p className="text-gray-400 font-semibold">Sustainable farming practices</p>
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Award className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+                <Award className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>
-                  <h3 className="text-[32px] text-gray-700">+123 4567 894</h3>
-                  <p className="text-gray-700">Sustainable farming practices</p>
+                  <h3 className="text-[20px] md:text-[25px] font-bold text-gray-700">+123 4567 894</h3>
+                  <p className="text-gray-400 font-semibold">Sustainable farming practices</p>
                 </span>
               </div>
             </div>
             {/* <Link
               href="/about"
-              className="inline-block px-6 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
+              className="inline-block px-6 py-3 bg-[#d57315] text-white font-medium rounded-md hover:bg-green-700 transition-colors"
             >
               Learn More About Us
             </Link> */}

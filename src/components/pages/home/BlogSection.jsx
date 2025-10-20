@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Calendar, User } from 'lucide-react';
+import { Calendar, MessageCircleMore } from 'lucide-react';
 
 const blogPosts = [
   {
@@ -42,7 +42,7 @@ const BlogSection = () => {
     <section className="py-20 bg-gray-50" id="blog">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-lg font-bold text-green-600 mb-2">LATEST NEWS</h2>
+          <h2 className="text-lg font-bold text-[#d57315] mb-2">LATEST NEWS</h2>
           <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">From Our Blog</h3>
           <p className="max-w-2xl mx-auto text-gray-600">
             Stay updated with the latest trends, insights, and updates from the farm.
@@ -53,7 +53,7 @@ const BlogSection = () => {
           {blogPosts.map((post) => (
             <article
               key={post.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border-b-5 border-green-700"
+              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border-b-5 border-[#d57315]"
             >
               <Link href={post.link} className="block">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
@@ -65,7 +65,7 @@ const BlogSection = () => {
                     <span>{post.date}</span>
                   </div>
                   <div className="flex items-center">
-                    <User size={14} className="mr-1" />
+                    <MessageCircleMore size={14} className="mr-1" />
                     <span>{post.author}</span>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ const BlogSection = () => {
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
                 <Link
                   href={post.link}
-                  className="inline-flex items-center text-green-600 font-medium hover:text-green-700"
+                  className="inline-flex items-center text-[#d57315] font-medium"
                 >
                   Read More
                   <svg

@@ -1,13 +1,13 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircleMore, Clock } from 'lucide-react';
 const ContactSection = () => {
-  return <section className="py-20 relative" style={{ backgroundImage: `url(/images/img3.jpg)` }} id="contact">
-      <div className="absolute inset-0 bg-black opacity-80" />
+  return <section className="pt-20 pb-5 relative" style={{ backgroundImage: `url(/images/img3.jpg)` }} id="contact">
+      <div className="absolute inset-0 bg-black opacity-90" />
       
       <div className="relative container mx-auto px-4 py-20 inset-1 z-20">
         <div className="text-center mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-xl font-bold text-green-600 mb-2">
+            <h2 className="text-xl font-bold text-[#d57315] mb-2">
               Company
             </h2>
             <h3 className="text-4xl font-bold text-white mb-4">
@@ -42,24 +42,24 @@ const ContactSection = () => {
               </select>
             </div>
 
-            <button className='w-full px-6 py-7 bg-green-600 text-white font-medium hover:bg-green-700'>Let's Talk</button>
+            <button className='w-full px-6 py-7 bg-[#d57315] text-white font-bold hover:bg-green-700'>Let's Talk</button>
           </div>
           
 
           <div className='flex flex-col md:flex-row gap-12 md:gap-25 items-center justify-center pt-20'>
             <div className="flex items-center gap-2">
-              <Mail className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+              <MessageCircleMore className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
                 <h3 className="text-[32px] text-white">What's App</h3>
-                <p className="text-green-700">+2348168016104</p>
+                <p className="text-[#d57315]">+2348168016104</p>
               </span>
             </div>
 
             <div className="flex items-center gap-2">
-              <Mail className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+              <Mail className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
-                <h3 className="text-[32px] text-white">What's App</h3>
-                <p className="text-green-700">+2348168016104</p>
+                <h3 className="text-[32px] text-white">Email</h3>
+                <p className="text-[#d57315]">@demo.com</p>
               </span>
             </div>
           </div>

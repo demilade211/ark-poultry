@@ -12,14 +12,14 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#232323] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <Link href="/" className="inline-block mb-4">
-              <span className="text-2xl border-l-8 pl-2 border-green-700 font-bold text-white">
-                Agri<span className="text-green-400">Grow</span>
+              <span className="text-2xl border-l-8 pl-2 border-[#d57315] font-bold text-white">
+                Agri<span className="text-[#d57315]">Grow</span>
               </span>
             </Link>
             <p className="text-gray-300 mb-6">
@@ -28,25 +28,25 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-300 hover:text-green-400 transition-colors"
+                className="text-gray-300 hover:text-[#d57315] transition-colors"
               >
                 <Facebook size={20} />
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-green-400 transition-colors"
+                className="text-gray-300 hover:text-[#d57315] transition-colors"
               >
                 <Twitter size={20} />
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-green-400 transition-colors"
+                className="text-gray-300 hover:text-[#d57315] transition-colors"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-green-400 transition-colors"
+                className="text-gray-300 hover:text-[#d57315] transition-colors"
               >
                 <Linkedin size={20} />
               </a>
@@ -55,14 +55,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg border-l-8 pl-2 border-green-700 font-semibold mb-4 text-white">
+            <h3 className="text-lg border-l-8 pl-2 border-[#d57315] font-semibold mb-4 text-white">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Home
                 </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/about"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   About Us
                 </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Our Services
                 </Link>
@@ -86,7 +86,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/blog"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Blog
                 </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Contact
                 </Link>
@@ -104,14 +104,14 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg border-l-8 pl-2 border-green-700 font-semibold mb-4 text-white">
+            <h3 className="text-lg border-l-8 pl-2 border-[#d57315] font-semibold mb-4 text-white">
               Our Services
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Egg Production
                 </Link>
@@ -119,7 +119,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Meat Distribution
                 </Link>
@@ -127,7 +127,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Poultry Supply
                 </Link>
@@ -135,7 +135,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Farm Consulting
                 </Link>
@@ -143,7 +143,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d57315] transition-colors"
                 >
                   Organic Feed
                 </Link>
@@ -153,14 +153,14 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg border-l-8 pl-2 border-green-700 font-semibold mb-4 text-white">
+            <h3 className="text-lg border-l-8 pl-2 border-[#d57315] font-semibold mb-4 text-white">
               Contact Us
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin
                   size={20}
-                  className="mr-2 mt-1 text-green-400 flex-shrink-0"
+                  className="mr-2 mt-1 text-[#d57315] flex-shrink-0"
                 />
                 <span className="text-gray-300">
                   123 Farm Road, Ife, Osun, Nigeria
@@ -169,14 +169,14 @@ const Footer = () => {
               <li className="flex items-center">
                 <Phone
                   size={20}
-                  className="mr-2 text-green-400 flex-shrink-0"
+                  className="mr-2 text-[#d57315] flex-shrink-0"
                 />
                 <span className="text-gray-300">(234) 81688016104</span>
               </li>
               <li className="flex items-center">
                 <Mail
                   size={20}
-                  className="mr-2 text-green-400 flex-shrink-0"
+                  className="mr-2 text-[#d57315] flex-shrink-0"
                 />
                 <span className="text-gray-300">info@company.com</span>
               </li>
