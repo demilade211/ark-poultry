@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { MessageCircleMore, UserStar, Award } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -33,23 +33,23 @@ const AboutSection = () => {
             <p className="text-gray-600 mb-8">
               We believe that happy chickens produce better eggs and meat. That's why we ensure our birds have access to natural light, fresh air, and organic feed grown right on our farm.
             </p>
-            <div className="flex md:items-center justify-left md:justify-between flex-col md:flex-row w-full md:w-[80%] md:p-10 relative md:absolute md:right-8 md:buttom-10 h-full md:h-auto bg-white md:shadow-md">
+            <div className="flex md:items-center justify-left lg:justify-between flex-col lg:flex-row w-full lg:w-[80%] md:p-10 relative lg:absolute lg:right-8 lg:bottom-10 h-full lg:h-auto bg-white lg:shadow-md">
               <div className="flex items-center gap-2">
-                <Check className="text-green-600 mr-2 mt-1 flex-shrink-0" size={50} />
+                <MessageCircleMore className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+                <span>
+                  <h3 className="text-[32px] text-gray-700">+234 8168 0161 04</h3>
+                  <p className="text-gray-700">Get A Free Estimate</p>
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <UserStar className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>
                   <h3 className="text-[32px] text-gray-700">+123 4567 894</h3>
                   <p className="text-gray-700">Sustainable farming practices</p>
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Check className="text-green-600 mr-2 mt-1 flex-shrink-0" size={50} />
-                <span>
-                  <h3 className="text-[32px] text-gray-700">+123 4567 894</h3>
-                  <p className="text-gray-700">Sustainable farming practices</p>
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-600 mr-2 mt-1 flex-shrink-0" size={50} />
+                <Award className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>
                   <h3 className="text-[32px] text-gray-700">+123 4567 894</h3>
                   <p className="text-gray-700">Sustainable farming practices</p>

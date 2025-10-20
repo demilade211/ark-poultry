@@ -5,70 +5,84 @@ const features = [
   {
     icon: <Award size={60} className="text-white" />,
     title: 'Industry Expertise',
-    description:
-      'Our team consists of agricultural experts with decades of combined experience in the field.',
+    description: 'Great explorer of truth',
   },
   {
     icon: <Users size={60} className="text-white" />,
     title: 'Client-Focused Approach',
-    description:
-      'We work closely with you to understand your unique needs and develop tailored solutions.',
+    description: 'Best shaving Equipment',
   },
   {
     icon: <Clock size={60} className="text-white" />,
     title: 'Timely Service',
-    description:
-      'We understand the time-sensitive nature of agriculture and deliver our services promptly.',
+    description: 'Work with great products',
   },
   {
     icon: <ThumbsUp size={60} className="text-white" />,
     title: 'Sustainable Practices',
-    description:
-      'Our methods prioritize environmental sustainability without compromising productivity.',
+    description: 'Store your season crop',
   },
 ];
 
 const WhyChooseUsSection = () => {
   return (
-    <section className="py-20 bg-green-700" id="why-choose-us">
-      <div className="container mx-auto px-4">
+    <section className="relative py-20" id="why-choose-us">
+
+      <div className="absolute top-0 left-0 h-full w-full lg:w-[70%] bg-green-700 z-0" />
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-md font-bold text-white mb-2">
-              WHY CHOOSE US
-            </h2>
-            <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          
+          <div className="text-white">
+            <h2 className="text-md font-bold mb-2">WHY CHOOSE US</h2>
+            <h3 className="text-3xl md:text-5xl font-bold mb-6">
               The Trusted Partner for Modern Agriculture
             </h3>
-            <p className="text-white mb-8">
+            <p className="mb-8">
               We combine innovative technology with sustainable practices to
               deliver superior agricultural solutions. Our commitment to
               excellence and customer satisfaction sets us apart in the
               industry.
             </p>
+
             <div className="grid grid-cols-1 sm:grid-cols-2">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center border-2 p-4 gap-2">
-                  <div className="">{feature.icon}</div>
+                <div 
+                  key={index} 
+                  className={`flex items-center p-6 gap-3 ${
+                    index % 2 === 0 ? 'border-r border-white/30' : ''
+                  } ${
+                    index < 2 ? 'border-b border-white/30' : ''
+                  }`}
+                >
+                  <div className='border-1 border-white p-4'>{feature.icon}</div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">
+                    <h4 className="text-xl font-semibold mb-2">
                       {feature.title}
                     </h4>
-                    <p className="text-white">{feature.description}</p>
+                    <p className="text-white/90">{feature.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="relative">
+          {/* RIGHT VIDEO */}
+          <div className="relative z-10">
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
               <video
                 className="w-full h-full object-cover"
-                // src="/videos/vid.mp4"
                 controls
               />
             </div>
+          </div>
+        </div>
+
+        {/* Bigger Experience Box */}
+        <div className="absolute left-8 top-full translate-y-1/2 z-20">
+          <div className="bg-white shadow-2xl px-8 py-6 rounded-xl border border-green-200">
+            <p className="text-3xl font-bold text-green-700">5+</p>
+            <p className="text-gray-700 font-semibold">Years Of Experience</p>
           </div>
         </div>
       </div>
