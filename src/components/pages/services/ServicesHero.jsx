@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ServicesHero() {
   return (
     <section className="relative h-[400px] md:h-[500px] bg-cover bg-center" style={{
