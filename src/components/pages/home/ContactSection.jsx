@@ -1,86 +1,66 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 const ContactSection = () => {
-  return <section className="py-20 bg-white" id="contact">
-      <div className="container mx-auto px-4">
+  return <section className="py-20 relative" style={{ backgroundImage: `url(/images/img3.jpg)` }} id="contact">
+      <div className="absolute inset-0 bg-black opacity-80" />
+      
+      <div className="relative container mx-auto px-4 py-20 inset-1 z-20">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold text-green-600 mb-2">CONTACT US</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Get In Touch With Our Team
-          </h3>
-          <p className="max-w-2xl mx-auto text-gray-600">
-            Have questions or ready to start working with us? Reach out to our
-            team using any of the contact methods below.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-6">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-start">
-                <div className="bg-green-100 p-3 rounded-full mr-4">
-                  <MapPin className="text-green-600" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-1">
-                    Our Location
-                  </h4>
-                  <p className="text-gray-600">123 Farm Road, Ife</p>
-                  <p className="text-gray-600">Osun, Nigeria</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-start">
-                <div className="bg-green-100 p-3 rounded-full mr-4">
-                  <Phone className="text-green-600" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-1">
-                    Phone Number
-                  </h4>
-                  <p className="text-gray-600">Main: (234) 81688016104</p>
-                  <p className="text-gray-600">Support: (234) 7045665406</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-start">
-                <div className="bg-green-100 p-3 rounded-full mr-4">
-                  <Mail className="text-green-600" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-1">
-                    Email Address
-                  </h4>
-                  <p className="text-gray-600">info@company.com</p>
-                  <p className="text-gray-600">support@company.com</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-start">
-                <div className="bg-green-100 p-3 rounded-full mr-4">
-                  <Clock className="text-green-600" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-1">
-                    Working Hours
-                  </h4>
-                  <p className="text-gray-600">
-                    Monday - Friday: 8:00 AM - 6:00 PM
-                  </p>
-                  <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
-                </div>
-              </div>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-xl font-bold text-green-600 mb-2">
+              Company
+            </h2>
+            <h3 className="text-4xl font-bold text-white mb-4">
+              Talk With Our Expert Gardener
+            </h3>
+            <p className="max-w-3xl mx-auto my-8 text-white">
+              We collaborate with leading companies in the Poultry industry
+              to bring you the most innovative and effective solutions for your
+              needs.
+            </p>
           </div>
-          {/* Map */}
-          <div className="lg:col-span-2">
-            <div className="h-96 bg-gray-200 rounded-lg overflow-hidden">
-              <iframe src="https://www.google.com/maps/embed?pb=0" width="100%" height="100%" style={{
-              border: 0
-            }} allowFullScreen loading="lazy" title="Office Location Map"></iframe>
+
+          <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
+            <div className='w-full'>
+              <input type="text" placeholder='Your Name' className='px-6 py-7 w-full bg-white/20' required />
+            </div>
+
+            <div className='w-full'>
+              <input type="text" placeholder='Your Name' className='px-6 py-7 w-full bg-white/20' required />
+            </div>
+
+            <div className='w-full'>
+              <select id="service" name="service" className="px-6 py-7 w-full bg-white/20 text-white focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                <option value="" className='text-gray-700'>Select</option>
+                <option value="crop-management" className='text-gray-700'>Crop Management</option>
+                <option value="irrigation" className='text-gray-700'>Irrigation Solutions</option>
+                <option value="analytics" className='text-gray-700'>Farm Analytics</option>
+                <option value="soil-testing" className='text-gray-700'>Soil Testing</option>
+                <option value="organic" className='text-gray-700'>Organic Farming</option>
+                <option value="training" className='text-gray-700'>Agricultural Training</option>
+                <option value="other" className='text-gray-700'>Other</option>
+              </select>
+            </div>
+
+            <button className='w-full px-6 py-7 bg-green-600 text-white font-medium hover:bg-green-700'>Let's Talk</button>
+          </div>
+          
+
+          <div className='flex flex-col md:flex-row gap-12 md:gap-25 items-center justify-center pt-20'>
+            <div className="flex items-center gap-2">
+              <Mail className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+              <span className='flex flex-col text-left'>
+                <h3 className="text-[32px] text-white">What's App</h3>
+                <p className="text-green-700">+2348168016104</p>
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Mail className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
+              <span className='flex flex-col text-left'>
+                <h3 className="text-[32px] text-white">What's App</h3>
+                <p className="text-green-700">+2348168016104</p>
+              </span>
             </div>
           </div>
         </div>

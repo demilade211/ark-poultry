@@ -41,49 +41,18 @@ const QuoteSection = () => {
       }, 5000);
     }, 1500);
   };
-  return <section className="py-20 bg-green-700 text-white" id="quote">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-sm font-bold text-green-300 mb-2">
-              GET A FREE QUOTE
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Order Farm-Fresh Products?
-            </h3>
-            <p className="text-green-100 mb-8">
-              Fill out the form to get a free consultation and quote for our
-              services. Our experts will analyze your needs and provide tailored
-              recommendations to improve your farm's productivity and
-              sustainability.
-            </p>
-            <div className="bg-green-800 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-4">Why Request a Quote?</h4>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="mr-2 mt-1">✓</span>
-                  <span>
-                    Receive a customized plan tailored to your specific needs
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2 mt-1">✓</span>
-                  <span>
-                    Get detailed pricing information with no hidden costs
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2 mt-1">✓</span>
-                  <span>Speak directly with our agricultural experts</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2 mt-1">✓</span>
-                  <span>No obligation to proceed with our recommendations</span>
-                </li>
-              </ul>
-            </div>
+  return <section className="bg-white text-white" id="quote">
+      {/* <div className="container mx-auto px-4"> */}
+      <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center relative top-40">
+          <div className=''>
+            <img
+              src="/images/img8.jpg"
+              alt="Farmers in field"
+              className="w-full h-auto sm:h-[100vh] object-cover"
+            />
           </div>
-          <div className="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+          <div className="bg-gray-50 md:mr-15 z-50 text-gray-800 p-8 py-15 shadow-md">
             {isSubmitted ? <div className="text-center py-8">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 text-green-600 mb-4">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,7 +67,7 @@ const QuoteSection = () => {
                   experts will contact you shortly.
                 </p>
               </div> : <>
-                <h4 className="text-2xl font-bold text-gray-800 mb-6">
+                <h4 className="text-4xl font-bold text-gray-800 mb-6">
                   Request a Free Quote
                 </h4>
                 <form onSubmit={handleSubmit}>
@@ -107,13 +76,13 @@ const QuoteSection = () => {
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                         Full Name *
                       </label>
-                      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+                      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                         Email Address *
                       </label>
-                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -121,13 +90,13 @@ const QuoteSection = () => {
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                         Phone Number
                       </label>
-                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" />
                     </div>
                     <div>
                       <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
                         Service Interested In *
                       </label>
-                      <select id="service" name="service" value={formData.service} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                      <select id="service" name="service" value={formData.service} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required>
                         <option value="">Select a service</option>
                         <option value="crop-management">Crop Management</option>
                         <option value="irrigation">Irrigation Solutions</option>
@@ -143,9 +112,9 @@ const QuoteSection = () => {
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                       Message
                     </label>
-                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Tell us about your specific needs..."></textarea>
+                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full px-3 py-3 border bg-white border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Tell us about your specific needs..."></textarea>
                   </div>
-                  <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center px-6 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}>
+                  <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center px-6 py-4 bg-green-600 text-white font-medium hover:bg-green-700 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}>
                     {isSubmitting ? <>
                         <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -159,6 +128,42 @@ const QuoteSection = () => {
                   </button>
                 </form>
               </>}
+          </div>
+        </div>
+      </div>
+
+      <div className='pt-50 lg:pt-90 pb-20 w-full px-4 bg-green-700'>
+        <div className='md:container flex-col lg:flex-row md:mx-auto flex justify-between items-center gap-4'>
+          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
+            <Send size={60} className="mr-2" />
+            <span>
+              <h3 className='text-[32px] font-bold'>478</h3>
+              <p>Happy Customers</p>
+            </span>
+          </div>
+
+          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
+            <Send size={60} className="mr-2" />
+            <span>
+              <h3 className='text-[32px] font-bold'>478</h3>
+              <p>Happy Customers</p>
+            </span>
+          </div>
+
+          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
+            <Send size={60} className="mr-2" />
+            <span>
+              <h3 className='text-[32px] font-bold'>478</h3>
+              <p>Happy Customers</p>
+            </span>
+          </div>
+
+          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
+            <Send size={60} className="mr-2" />
+            <span>
+              <h3 className='text-[32px] font-bold'>478</h3>
+              <p>Happy Customers</p>
+            </span>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link href="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold text-white">
+              <span className="text-2xl border-l-8 pl-2 border-green-700 font-bold text-white">
                 Agri<span className="text-green-400">Grow</span>
               </span>
             </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-lg border-l-8 pl-2 border-green-700 font-semibold mb-4 text-white">
               Quick Links
             </h3>
             <ul className="space-y-2">
@@ -104,7 +104,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-lg border-l-8 pl-2 border-green-700 font-semibold mb-4 text-white">
               Our Services
             </h3>
             <ul className="space-y-2">
@@ -153,7 +153,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-lg border-l-8 pl-2 border-green-700 font-semibold mb-4 text-white">
               Contact Us
             </h3>
             <ul className="space-y-4">

@@ -10,7 +10,7 @@ const blogPosts = [
     image:
       '/images/img2.jpg',
     date: 'May 15, 2023',
-    author: 'John Smith',
+    author: '0 comments',
     link: '/blog/future-sustainable-farming',
   },
   {
@@ -21,7 +21,7 @@ const blogPosts = [
     image:
       '/images/img6.jpg',
     date: 'June 2, 2023',
-    author: 'Emma Johnson',
+    author: '0 comments',
     link: '/blog/smart-farming-technology',
   },
   {
@@ -32,7 +32,7 @@ const blogPosts = [
     image:
       '/images/img7.jpg',
     date: 'July 10, 2023',
-    author: 'Michael Brown',
+    author: '0 comments',
     link: '/blog/organic-farming-benefits-challenges',
   },
 ];
@@ -42,8 +42,8 @@ const BlogSection = () => {
     <section className="py-20 bg-gray-50" id="blog">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold text-green-600 mb-2">LATEST NEWS</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">From Our Blog</h3>
+          <h2 className="text-lg font-bold text-green-600 mb-2">LATEST NEWS</h2>
+          <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">From Our Blog</h3>
           <p className="max-w-2xl mx-auto text-gray-600">
             Stay updated with the latest trends, insights, and updates from the farm.
           </p>
@@ -53,7 +53,7 @@ const BlogSection = () => {
           {blogPosts.map((post) => (
             <article
               key={post.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border-b-5 border-green-700"
             >
               <Link href={post.link} className="block">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
@@ -94,14 +94,14 @@ const BlogSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Link
             href="/blog"
             className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
           >
             View All Posts
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

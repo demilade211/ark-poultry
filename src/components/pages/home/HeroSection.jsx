@@ -64,21 +64,30 @@ const HeroSection = () => {
             className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <div className="absolute inset-0 bg-black opacity-50" />
+            <div className="absolute inset-0 bg-black opacity-60" />
           </div>
 
-          <div className="relative z-20 flex items-center justify-center h-full px-4">
-            <div className="text-center max-w-3xl">
+          <div className="relative z-20 flex items-center h-full px-4 md:px-23">
+            <div className="text-center sm:text-left max-w-5xl">
               <h1 className="text-5xl md:text-4xl lg:text-7xl font-bold text-white mb-6">
                 {slide.title}
               </h1>
               <p className="text-2xl text-white mb-8">{slide.description}</p>
-              <Link
-                href={slide.buttonLink}
-                className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
-              >
-                {slide.buttonText}
-              </Link>
+              <div className="flex items-center mx-auto sm:mx-0 flex-col sm:flex-row gap-3">
+                <Link
+                  href={slide.buttonLink}
+                  className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
+                >
+                  {slide.buttonText}
+                </Link>
+
+                <Link
+                  href={slide.buttonLink}
+                  className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
+                >
+                  {slide.buttonText}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

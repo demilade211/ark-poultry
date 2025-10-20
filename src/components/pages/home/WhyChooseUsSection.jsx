@@ -3,25 +3,25 @@ import { Award, Users, Clock, ThumbsUp } from 'lucide-react';
 
 const features = [
   {
-    icon: <Award size={32} className="text-green-600" />,
+    icon: <Award size={60} className="text-white" />,
     title: 'Industry Expertise',
     description:
       'Our team consists of agricultural experts with decades of combined experience in the field.',
   },
   {
-    icon: <Users size={32} className="text-green-600" />,
+    icon: <Users size={60} className="text-white" />,
     title: 'Client-Focused Approach',
     description:
       'We work closely with you to understand your unique needs and develop tailored solutions.',
   },
   {
-    icon: <Clock size={32} className="text-green-600" />,
+    icon: <Clock size={60} className="text-white" />,
     title: 'Timely Service',
     description:
       'We understand the time-sensitive nature of agriculture and deliver our services promptly.',
   },
   {
-    icon: <ThumbsUp size={32} className="text-green-600" />,
+    icon: <ThumbsUp size={60} className="text-white" />,
     title: 'Sustainable Practices',
     description:
       'Our methods prioritize environmental sustainability without compromising productivity.',
@@ -30,31 +30,31 @@ const features = [
 
 const WhyChooseUsSection = () => {
   return (
-    <section className="py-20 bg-white" id="why-choose-us">
+    <section className="py-20 bg-green-700" id="why-choose-us">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-sm font-bold text-green-600 mb-2">
+            <h2 className="text-md font-bold text-white mb-2">
               WHY CHOOSE US
             </h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
               The Trusted Partner for Modern Agriculture
             </h3>
-            <p className="text-gray-600 mb-8">
+            <p className="text-white mb-8">
               We combine innovative technology with sustainable practices to
               deliver superior agricultural solutions. Our commitment to
               excellence and customer satisfaction sets us apart in the
               industry.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2">
               {features.map((feature, index) => (
-                <div key={index} className="flex">
-                  <div className="mr-4 mt-1">{feature.icon}</div>
+                <div key={index} className="flex items-center border-2 p-4 gap-2">
+                  <div className="">{feature.icon}</div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                    <h4 className="text-xl font-semibold text-white mb-2">
                       {feature.title}
                     </h4>
-                    <p className="text-gray-600">{feature.description}</p>
+                    <p className="text-white">{feature.description}</p>
                   </div>
                 </div>
               ))}

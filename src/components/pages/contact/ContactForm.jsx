@@ -50,7 +50,7 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-1 space-y-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
                 Contact Information
               </h2>
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -114,7 +114,7 @@ export default function ContactForm() {
             </div>
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
                 Send Us a Message
               </h2>
               {isSubmitted ? <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
@@ -130,33 +130,21 @@ export default function ContactForm() {
                     Your message has been submitted successfully. We'll get back
                     to you as soon as possible.
                   </p>
-                </div> : <form onSubmit={handleSubmit} className="bg-gray-50 p-8 rounded-lg">
+                </div> : <form onSubmit={handleSubmit} className="bg-gray-50 text-gray-700 p-8 rounded-lg">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                        Full Name *
-                      </label>
-                      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+                      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required placeholder="Your Name"/>
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address *
-                      </label>
-                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required placeholder="Your Email"/>
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                        Phone Number
-                      </label>
-                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Phone Number"/>
                     </div>
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                        Subject *
-                      </label>
-                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required placeholder="Subject">
                         <option value="">Select a subject</option>
                         <option value="general">General Inquiry</option>
                         <option value="services">Services Information</option>
@@ -167,10 +155,7 @@ export default function ContactForm() {
                     </div>
                   </div>
                   <div className="mb-6">
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Message *
-                    </label>
-                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={6} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Please describe how we can help you..." required></textarea>
+                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={6} className="w-full px-3 py-3 bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Please describe how we can help you..." required placeholder="Send Message"></textarea>
                   </div>
                   <button type="submit" disabled={isSubmitting} className={`flex items-center justify-center px-6 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}>
                     {isSubmitting ? <>
