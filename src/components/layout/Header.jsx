@@ -104,14 +104,14 @@ const Header = () => {
               href="/contact"
               className="text-gray-700"
             >
-              <X size={24} />
+              <ShoppingCart size={24} />
             </Link>
 
             <Link
               href="/contact"
               className="text-gray-700"
             >
-              <X size={24} />
+              <ClipboardList size={24} />
             </Link>
           </div>
         </div>

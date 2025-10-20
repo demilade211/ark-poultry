@@ -13,7 +13,7 @@ const AboutSection = () => {
               <img
                 src="/images/img8.jpg"
                 alt="Farmers in field"
-                className="w-full h-auto sm:h-[80vh] object-cover"
+                className="w-full h-auto sm:h-[100vh] object-cover"
               />
             </div>
             {/* <div className="absolute -bottom-6 -right-6 bg-green-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
@@ -33,7 +33,7 @@ const AboutSection = () => {
             <p className="text-gray-600 mb-8">
               We believe that happy chickens produce better eggs and meat. That's why we ensure our birds have access to natural light, fresh air, and organic feed grown right on our farm.
             </p>
-            <div className="flex md:items-center justify-left lg:justify-between flex-col lg:flex-row w-full lg:w-[80%] md:p-10 relative lg:absolute lg:right-8 lg:bottom-10 h-full lg:h-auto bg-white lg:shadow-md">
+            <div className="flex md:items-center justify-left lg:justify-between flex-col lg:flex-row w-full lg:w-[80%] md:p-10 relative lg:absolute lg:right-8 lg:bottom-[13%] h-full lg:h-auto bg-white lg:shadow-md">
               <div className="flex items-center gap-2">
                 <MessageCircleMore className="text-green-600 mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>
