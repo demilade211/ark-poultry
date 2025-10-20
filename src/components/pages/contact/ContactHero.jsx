@@ -10,7 +10,7 @@ export default function ContactHero() {
           <div className="text-left text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
             <span className="flex items-center gap-2 text-xl md:text-2xl max-w-2xl mx-auto">
-              <Link href="/" className="text-green-400 hover:underline">
+              <Link href="/" className="text-[#d57315] hover:underline">
                 Home
               </Link>
               <span className="mx-2">/</span>
