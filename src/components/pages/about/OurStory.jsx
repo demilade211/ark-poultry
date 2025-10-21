@@ -29,7 +29,7 @@ export default function OurStory() {
                 we do.
               </p>
             </div>
-            <div className="rounded-lg overflow-hidden shadow-xl">
+            <div className="overflow-hidden shadow-xl">
               <img src="/images/img9.jpg" alt="Our farm history" className="w-full h-auto object-cover" />
             </div>
           </div>

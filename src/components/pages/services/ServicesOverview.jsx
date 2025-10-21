@@ -82,12 +82,12 @@ export default function ServicesOverview() {
                           <span className="text-gray-700">{feature}</span>
                         </div>)}
                     </div>
-                    <Link href="/contact" className="inline-block px-6 py-3 bg-[#d57315] text-white font-medium rounded-md hover:bg-green-700 transition-colors">
+                    <Link href="/contact" className="inline-block px-6 py-3 bg-[#d57315] text-white text-sm font-semibold hover:bg-[#d57315] transition-colors">
                       Inquire About This Service
                     </Link>
                   </div>
                   <div className={`${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                    <img src={service.image} alt={service.title} className="rounded-lg shadow-lg w-full h-auto" />
+                    <img src={service.image} alt={service.title} className="shadow-lg w-full h-[500px]" />
                   </div>
                 </div>
               </div>

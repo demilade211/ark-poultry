@@ -7,7 +7,7 @@ export default function OurValues() {
           <SectionTitle title="Our Values" subtitle="What we stand for" center={true} />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Value 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 shadow-md">
               <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🌱</span>
               </div>
@@ -21,7 +21,7 @@ export default function OurValues() {
               </p>
             </div>
             {/* Value 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 shadow-md">
               <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🐔</span>
               </div>
@@ -35,7 +35,7 @@ export default function OurValues() {
               </p>
             </div>
             {/* Value 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 shadow-md">
               <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🏆</span>
               </div>
@@ -47,7 +47,7 @@ export default function OurValues() {
               </p>
             </div>
             {/* Value 4 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 shadow-md">
               <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🤝</span>
               </div>
@@ -61,7 +61,7 @@ export default function OurValues() {
               </p>
             </div>
             {/* Value 5 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 shadow-md">
               <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🔍</span>
               </div>
@@ -75,7 +75,7 @@ export default function OurValues() {
               </p>
             </div>
             {/* Value 6 */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 shadow-md">
               <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🌍</span>
               </div>

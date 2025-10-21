@@ -88,7 +88,7 @@ const ServicesSection = () => {
                 {service.title}
               </h4>
               <p className="text-white mb-4 text-[#ffffffbf]">{service.description}</p>
-              <Link
+              {/* <Link
                 href={service.link}
                 className="inline-flex items-center text-[#d57315] font-medium hover:text-green-700"
               >
@@ -106,7 +106,7 @@ const ServicesSection = () => {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
-              </Link>
+              </Link> */}
             </div>
           ))}
         </div>

@@ -50,10 +50,10 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-1 space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
                 Contact Information
               </h2>
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 p-6">
                 <div className="flex items-start">
                   <div className="bg-gray-100 p-3 rounded-full mr-4">
                     <MapPin className="text-[#d57315]" size={24} />
@@ -67,7 +67,7 @@ export default function ContactForm() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 p-6">
                 <div className="flex items-start">
                   <div className="bg-gray-100 p-3 rounded-full mr-4">
                     <Phone className="text-[#d57315]" size={24} />
@@ -81,7 +81,7 @@ export default function ContactForm() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 p-6">
                 <div className="flex items-start">
                   <div className="bg-gray-100 p-3 rounded-full mr-4">
                     <Mail className="text-[#d57315]" size={24} />
@@ -95,7 +95,7 @@ export default function ContactForm() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 p-6">
                 <div className="flex items-start">
                   <div className="bg-gray-100 p-3 rounded-full mr-4">
                     <Clock className="text-[#d57315]" size={24} />
@@ -114,10 +114,10 @@ export default function ContactForm() {
             </div>
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
                 Send Us a Message
               </h2>
-              {isSubmitted ? <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+              {isSubmitted ? <div className="bg-[#f5cda7] border border-[#fcbd82] p-6 text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 text-[#d57315] mb-4">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
@@ -130,21 +130,21 @@ export default function ContactForm() {
                     Your message has been submitted successfully. We'll get back
                     to you as soon as possible.
                   </p>
-                </div> : <form onSubmit={handleSubmit} className="bg-gray-50 text-gray-700 p-8 rounded-lg">
+                </div> : <form onSubmit={handleSubmit} className="bg-gray-50 text-gray-700 p-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required placeholder="Your Name"/>
+                      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#d57315]" required placeholder="Your Name"/>
                     </div>
                     <div>
-                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required placeholder="Your Email"/>
+                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#d57315]" required placeholder="Your Email"/>
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Phone Number"/>
+                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#d57315]" placeholder="Phone Number"/>
                     </div>
                     <div>
-                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" required placeholder="Subject">
+                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className="w-full px-3 py-3 border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#d57315]" required placeholder="Subject">
                         <option value="">Select a subject</option>
                         <option value="general">General Inquiry</option>
                         <option value="services">Services Information</option>
@@ -155,9 +155,9 @@ export default function ContactForm() {
                     </div>
                   </div>
                   <div className="mb-6">
-                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={6} className="w-full px-3 py-3 bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Please describe how we can help you..." required placeholder="Send Message"></textarea>
+                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={6} className="w-full px-3 py-3 bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#d57315]" placeholder="Please describe how we can help you..." required placeholder="Send Message"></textarea>
                   </div>
-                  <button type="submit" disabled={isSubmitting} className={`flex items-center justify-center px-6 py-3 bg-[#d57315] text-white font-medium rounded-md hover:bg-green-700 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}>
+                  <button type="submit" disabled={isSubmitting} className={`flex items-center justify-center px-6 py-3 bg-[#d57315] text-white font-semibold hover:bg-[#d57315] transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}>
                     {isSubmitting ? <>
                         <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>

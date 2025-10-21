@@ -12,7 +12,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="overflow-hidden">
               <img
-                src="/images/img8.jpg"
+                src="/images/img12.jpg"
                 alt="Farmers in field"
                 className="w-full h-auto sm:h-[100vh] max-h-[542px] object-cover"
               />
