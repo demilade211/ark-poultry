@@ -33,7 +33,7 @@ const AboutSection = () => {
             <p className="text-gray-600 mb-8">
               We believe that happy chickens produce better eggs and meat. That's why we ensure our birds have access to natural light, fresh air, and organic feed grown right on our farm.
             </p>
-            <div className="flex md:items-center justify-left lg:justify-between flex-col lg:flex-row w-full lg:w-[80%] md:p-10 relative lg:absolute lg:right-8 lg:bottom-[13%] h-full lg:h-auto bg-white lg:shadow-md">
+            <div className="flex gap-3 md:gap-0 md:items-center justify-left lg:justify-between flex-col lg:flex-row w-full lg:w-[80%] md:p-10 relative lg:absolute lg:right-8 lg:bottom-[13%] h-full lg:h-auto bg-white lg:shadow-md">
               <div className="flex items-center gap-2">
                 <MessageCircleMore className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>

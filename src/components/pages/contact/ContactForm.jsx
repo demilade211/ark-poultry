@@ -50,7 +50,7 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-1 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
+              <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-6">
                 Contact Information
               </h2>
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -114,7 +114,7 @@ export default function ContactForm() {
             </div>
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
+              <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-6">
                 Send Us a Message
               </h2>
               {isSubmitted ? <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">

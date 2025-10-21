@@ -46,11 +46,11 @@ const ContactSection = () => {
           </div>
           
 
-          <div className='flex flex-col md:flex-row gap-12 md:gap-25 items-center justify-center pt-20'>
+          <div className='flex flex-col md:flex-row gap-12 md:gap-25 md:items-center justify-center pt-20'>
             <div className="flex items-center gap-2">
               <MessageCircleMore className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
-                <h3 className="text-[32px] text-white">What's App</h3>
+                <h3 className="text-[32px] text-white font-semibold">What's App</h3>
                 <p className="text-[#d57315]">+2348168016104</p>
               </span>
             </div>
@@ -58,7 +58,7 @@ const ContactSection = () => {
             <div className="flex items-center gap-2">
               <Mail className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
-                <h3 className="text-[32px] text-white">Email</h3>
+                <h3 className="text-[32px] text-white font-semibold">Email</h3>
                 <p className="text-[#d57315]">@demo.com</p>
               </span>
             </div>

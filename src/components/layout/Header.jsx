@@ -71,19 +71,19 @@ const Header = () => {
               </Link>
             ))}
 
-            <div className="hidden md:flex gap-4 pl-5 border-l-2 border-gray-700 items-center">
+            <div className="hidden md:flex gap-5 pl-5 border-l-2 border-gray-700 items-center">
               <Link
                 href="/contact"
-                className="text-gray-700"
+                className="text-gray-700 rounded-full bg-gray-200 p-3"
               >
-                <ShoppingCart size={24} />
+                <ShoppingCart size={18} />
               </Link>
 
               <Link
                 href="/contact"
-                className="hidden sm:flex text-gray-700"
+                className="hidden sm:flex text-gray-700 rounded-full bg-gray-200 p-3"
               >
-                <ClipboardList size={24} />
+                <ClipboardList size={18} />
               </Link>
             </div>
           </nav>
@@ -94,24 +94,24 @@ const Header = () => {
           </button>
 
           <Link href="/" className="md:hidden flex items-center">
-            <span className="text-2xl font-bold text-green-700">
+            <span className="text-2xl font-bold text-[#d57315]">
               Poul<span className="text-green-500">try</span>
             </span>
           </Link>
 
-          <div className="md:hidden flex gap-2 pl-5 border-l-2 border-gray-700 items-center">
+          <div className="md:hidden flex gap-4 pl-5 items-center">
             <Link
               href="/contact"
-              className="text-gray-700"
+              className="text-gray-700 rounded-full bg-gray-200 p-2"
             >
-              <ShoppingCart size={24} />
+              <ShoppingCart size={18} />
             </Link>
 
             <Link
               href="/contact"
-              className="text-gray-700"
+              className="text-gray-700 rounded-full bg-gray-200 p-2"
             >
-              <ClipboardList size={24} />
+              <ClipboardList size={18} />
             </Link>
           </div>
         </div>
@@ -135,7 +135,7 @@ const Header = () => {
 
               <Link
                 href="/contact"
-                className="inline-block px-5 py-2.5 rounded-md bg-[#d57315] text-white font-medium hover:bg-green-700 transition-colors"
+                className="inline-block px-5 py-2.5 rounded-md bg-[#d57315] text-white font-medium hover:bg-[#d57315] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Quote

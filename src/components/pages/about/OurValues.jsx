@@ -8,7 +8,7 @@ export default function OurValues() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Value 1 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🌱</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -22,7 +22,7 @@ export default function OurValues() {
             </div>
             {/* Value 2 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🐔</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -36,7 +36,7 @@ export default function OurValues() {
             </div>
             {/* Value 3 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🏆</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Quality</h3>
@@ -48,7 +48,7 @@ export default function OurValues() {
             </div>
             {/* Value 4 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🤝</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -62,7 +62,7 @@ export default function OurValues() {
             </div>
             {/* Value 5 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🔍</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -76,7 +76,7 @@ export default function OurValues() {
             </div>
             {/* Value 6 */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#f5cda7] rounded-full flex items-center justify-center mb-6">
                 <span className="text-green-600 text-3xl">🌍</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">

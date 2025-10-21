@@ -10,7 +10,7 @@ export default function Certifications() {
               <SectionTitle title="Our Certifications" subtitle="Meeting the highest standards" />
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <CheckCircleIcon size={24} className="text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <CheckCircleIcon size={24} className="text-[#d57315] mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="text-lg font-medium text-gray-800">
                       Certified Organic
@@ -22,7 +22,7 @@ export default function Certifications() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircleIcon size={24} className="text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <CheckCircleIcon size={24} className="text-[#d57315] mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="text-lg font-medium text-gray-800">
                       Humane Certified
@@ -34,7 +34,7 @@ export default function Certifications() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircleIcon size={24} className="text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <CheckCircleIcon size={24} className="text-[#d57315] mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="text-lg font-medium text-gray-800">
                       Non-GMO Project Verified
@@ -46,7 +46,7 @@ export default function Certifications() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircleIcon size={24} className="text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <CheckCircleIcon size={24} className="text-[#d57315] mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="text-lg font-medium text-gray-800">
                       USDA Inspected

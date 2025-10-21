@@ -9,7 +9,7 @@ const SectionTitle = ({
         {title}
       </h2>
       {subtitle && <p className="text-xl text-gray-600">{subtitle}</p>}
-      <div className={`h-1 w-20 bg-green-600 mt-4 ${center ? 'mx-auto' : ''}`}></div>
+      <div className={`h-1 w-20 bg-[#d57315] mt-4 ${center ? 'mx-auto' : ''}`}></div>
     </div>;
 };
 export default SectionTitle;

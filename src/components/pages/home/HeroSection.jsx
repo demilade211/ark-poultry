@@ -51,7 +51,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[75vh] sm:h-[100vh] overflow-hidden">
+    <section className="relative w-full h-[67vh] sm:h-[100vh] overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -69,10 +69,10 @@ const HeroSection = () => {
 
           <div className="relative z-20 flex items-center h-full px-4 md:px-23">
             <div className="text-center sm:text-left max-w-5xl">
-              <h1 className="text-5xl md:text-4xl lg:text-7xl font-bold text-white mb-6">
+              <h1 className="text-2xl md:text-4xl lg:text-7xl font-bold text-white mb-6">
                 {slide.title}
               </h1>
-              <p className="text-2xl text-white mb-8">{slide.description}</p>
+              <p className="text-lg md:text-2xl text-white mb-8">{slide.description}</p>
               <div className="flex items-center mx-auto sm:mx-0 flex-col sm:flex-row gap-3">
                 <Link
                   href={slide.buttonLink}

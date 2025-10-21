@@ -49,8 +49,8 @@ const WhyChooseUsSection = () => {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className={`flex items-center p-6 gap-3 ${index % 2 === 0 ? 'border-r border-white/30' : ''
-                    } ${index < 2 ? 'border-b border-white/30' : ''
+                  className={`flex items-center py-4 md:p-6 gap-3 ${index % 2 === 0 ? 'md:border-r border-white/30' : ''
+                    } ${index < 2 ? 'md:border-b border-white/30' : ''
                     }`}
                 >
                   <div className='border-1 border-white p-4'>{feature.icon}</div>
