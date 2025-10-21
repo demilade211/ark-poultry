@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
 import { MapPin, Phone, Mail, MessageCircleMore, Clock } from 'lucide-react';
 const ContactSection = () => {
   return <section className="pt-20 pb-5 relative" style={{ backgroundImage: `url(/images/img3.jpg)` }} id="contact">
@@ -10,9 +11,12 @@ const ContactSection = () => {
             <h2 className="text-xl font-bold text-[#d57315] mb-2">
               Company
             </h2>
-            <h3 className="text-4xl font-bold text-white mb-4">
-              Talk With Our Expert Gardener
-            </h3>
+            <HomeSectionTitle
+              title="Get in Touch with Our Poultry Experts Today"
+              titleColor="white"
+              bgColor="[#d57315]"
+              center={true}
+            />
             <p className="max-w-3xl mx-auto my-8 text-white">
               We collaborate with leading companies in the Poultry industry
               to bring you the most innovative and effective solutions for your
@@ -50,16 +54,16 @@ const ContactSection = () => {
             <div className="flex items-center gap-2">
               <MessageCircleMore className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
-                <h3 className="text-[32px] text-white font-semibold">What's App</h3>
-                <p className="text-[#d57315]">+2348168016104</p>
+                <h3 className="text-[20px] md:text-[25px] text-white font-semibold">What's App</h3>
+                <p className="text-[#d57315] font-semibold text-sm">+2348168016104</p>
               </span>
             </div>
 
             <div className="flex items-center gap-2">
               <Mail className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
-                <h3 className="text-[32px] text-white font-semibold">Email</h3>
-                <p className="text-[#d57315]">@demo.com</p>
+                <h3 className="text-[20px] md:text-[25px] text-white font-semibold">Email</h3>
+                <p className="text-[#d57315] font-semibold text-sm">@demo.com</p>
               </span>
             </div>
           </div>

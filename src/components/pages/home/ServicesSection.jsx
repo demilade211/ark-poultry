@@ -1,5 +1,6 @@
 "use client";
 
+import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
 import Link from "next/link";
 import {
   Egg,
@@ -63,9 +64,12 @@ const ServicesSection = () => {
           <h2 className="text-md font-bold text-[#d57315] mb-2">
             OUR SERVICES
           </h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            Comprehensive Agricultural Solutions
-          </h3>
+          <HomeSectionTitle
+            title="Comprehensive Poultry Services Tailored to Your Needs"
+            titleColor="white"
+            bgColor="[#d57315]"
+            center={true}
+          />
           <p className="max-w-2xl mx-auto text-[#ffffffbf]">
             We offer a wide range of services designed to help farmers improve
             productivity, sustainability, and profitability through innovative

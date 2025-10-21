@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
 import { Send, Handshake, UserStar, Award, ToolCase } from 'lucide-react';
 const QuoteSection = () => {
   const [formData, setFormData] = useState({
@@ -67,9 +68,12 @@ const QuoteSection = () => {
                   experts will contact you shortly.
                 </p>
               </div> : <>
-                <h4 className="text-4xl font-bold text-[#333] mb-6">
-                  Get a Free Quote
-                </h4>
+                <HomeSectionTitle
+                  title="Request a Quote"
+                  titleColor="gray-800"
+                  bgColor="[#d57315]"
+                  center={false}
+                />
                 <form onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
@@ -117,37 +121,37 @@ const QuoteSection = () => {
         </div>
       </div>
 
-      <div className='pt-40 lg:pt-90 pb-20 w-full px-4 bg-[#d57315]'>
+      <div className='pt-45 lg:pt-65 pb-20 w-full px-4 bg-[#d57315]'>
         <div className='md:container flex-col lg:flex-row md:mx-auto flex justify-between items-center gap-4'>
           <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
             <UserStar size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-bold'>478</h3>
-              <p>Happy Customers</p>
+              <h3 className='text-[32px] font-semibold'>478</h3>
+              <p className="font-semibold text-sm">Happy Customers</p>
             </span>
           </div>
 
           <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
             <Handshake size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-bold'>478</h3>
-              <p>Projects Done</p>
+              <h3 className='text-[32px] font-semibold'>478</h3>
+              <p className="font-semibold text-sm">Projects Done</p>
             </span>
           </div>
 
           <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
             <ToolCase size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-bold'>478</h3>
-              <p>Happy Customers</p>
+              <h3 className='text-[32px] font-semibold'>478</h3>
+              <p className="font-semibold text-sm">Happy Customers</p>
             </span>
           </div>
 
           <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
             <Award size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-bold'>478</h3>
-              <p>Awards</p>
+              <h3 className='text-[32px] font-semibold'>478</h3>
+              <p className="font-semibold text-sm">Awards</p>
             </span>
           </div>
         </div>

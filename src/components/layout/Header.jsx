@@ -41,7 +41,7 @@ const Header = () => {
             <Mail size={18} />
             <Linkedin size={18} />
           </span>
-          <span className="bg-[#d57315] flex gap-2 items-center h-full pl-5 pr-12 22xl:pr-4"><Phone size={18} /> <p>Talk To Expert : 0 (143) 456 7897</p></span>
+          <span className="bg-[#d57315] flex gap-2 items-center font-semibold h-full pl-5 pr-12 22xl:pr-4"><Phone size={18} /> <p>Talk To Expert : 0 (143) 456 7897</p></span>
         </span>
       </div>
 
@@ -63,7 +63,7 @@ const Header = () => {
               <Link
                 key={link.name}
                 href={link.path}
-                className={`text-lg font-medium transition-colors hover:text-[#d57315] ${
+                className={`text-md font-semibold transition-colors hover:text-[#d57315] ${
                   pathname === link.path ? "text-[#d57315]" : "text-gray-700"
                 }`}
               >
@@ -74,14 +74,14 @@ const Header = () => {
             <div className="hidden md:flex gap-5 pl-5 border-l-2 border-gray-700 items-center">
               <Link
                 href="/contact"
-                className="text-gray-700 rounded-full bg-gray-200 p-3"
+                className="text-gray-700 rounded-full bg-gray-100 p-3"
               >
                 <ShoppingCart size={18} />
               </Link>
 
               <Link
                 href="/contact"
-                className="hidden sm:flex text-gray-700 rounded-full bg-gray-200 p-3"
+                className="hidden sm:flex text-gray-700 rounded-full bg-gray-100 p-3"
               >
                 <ClipboardList size={18} />
               </Link>
@@ -102,14 +102,14 @@ const Header = () => {
           <div className="md:hidden flex gap-4 pl-5 items-center">
             <Link
               href="/contact"
-              className="text-gray-700 rounded-full bg-gray-200 p-2"
+              className="hidden md:flex text-gray-700 rounded-full bg-gray-100 p-2"
             >
               <ShoppingCart size={18} />
             </Link>
 
             <Link
               href="/contact"
-              className="text-gray-700 rounded-full bg-gray-200 p-2"
+              className="text-gray-700 rounded-full bg-gray-100 p-2"
             >
               <ClipboardList size={18} />
             </Link>

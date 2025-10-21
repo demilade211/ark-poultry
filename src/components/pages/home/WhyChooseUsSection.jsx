@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
 import { Award, Users, Clock, ThumbsUp } from 'lucide-react';
 
 const features = [
@@ -35,9 +36,12 @@ const WhyChooseUsSection = () => {
 
           <div className="text-white">
             <h2 className="text-md font-bold mb-2">WHY CHOOSE US</h2>
-            <h3 className="text-3xl md:text-5xl font-bold mb-6">
-              The Trusted Partner for Modern Agriculture
-            </h3>
+            <HomeSectionTitle 
+              title="Your Trusted Partner in Agricultural Excellence"
+              titleColor="white"
+              bgColor="white"
+              center={false}
+            />
             <p className="mb-8">
               We combine innovative technology with sustainable practices to
               deliver superior agricultural solutions. Our commitment to

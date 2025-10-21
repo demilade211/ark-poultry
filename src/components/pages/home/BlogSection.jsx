@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
 import { Calendar, MessageCircleMore } from 'lucide-react';
 
 const blogPosts = [
@@ -43,7 +44,12 @@ const BlogSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-lg font-bold text-[#d57315] mb-2">LATEST NEWS</h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">From Our Blog</h3>
+          <HomeSectionTitle
+            title="Insights and Updates from Our Poultry Farm"
+            titleColor="gray-800"
+            bgColor="[#d57315]"
+            center={true}
+          />
           <p className="max-w-2xl mx-auto text-gray-600">
             Stay updated with the latest trends, insights, and updates from the farm.
           </p>
@@ -53,7 +59,7 @@ const BlogSection = () => {
           {blogPosts.map((post) => (
             <article
               key={post.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border-b-5 border-[#d57315]"
+              className="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow border-b-5 border-[#d57315]"
             >
               <Link href={post.link} className="block">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
