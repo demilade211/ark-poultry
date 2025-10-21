@@ -135,7 +135,7 @@ const Header = () => {
 
               <Link
                 href="/contact"
-                className="inline-block px-5 py-2.5 rounded-md bg-[#d57315] text-white font-medium hover:bg-[#d57315] transition-colors"
+                className="inline-block px-5 py-2.5 bg-[#d57315] text-white font-medium hover:bg-[#d57315] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Quote
