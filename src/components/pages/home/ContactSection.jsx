@@ -34,7 +34,7 @@ const ContactSection = () => {
             </div>
 
             <div className='w-full'>
-              <select id="service" name="service" className="px-6 py-7 w-full bg-white/20 text-white focus:outline-none focus:ring-2 focus:ring-green-500" required>
+              <select id="service" name="service" className="px-6 py-7 w-full bg-white/20 text-white focus:outline-none focus:ring-2 focus:ring-[#d57315]" required>
                 <option value="" className='text-gray-700'>Select</option>
                 <option value="crop-management" className='text-gray-700'>Crop Management</option>
                 <option value="irrigation" className='text-gray-700'>Irrigation Solutions</option>
@@ -46,7 +46,7 @@ const ContactSection = () => {
               </select>
             </div>
 
-            <button className='w-full px-6 py-7 bg-[#d57315] text-white font-bold hover:bg-green-700'>Let's Talk</button>
+            <button className='w-full px-6 py-7 bg-[#d57315] text-white font-bold hover:bg-[#d57315]'>Let's Talk</button>
           </div>
           
 
@@ -55,7 +55,7 @@ const ContactSection = () => {
               <MessageCircleMore className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
                 <h3 className="text-[20px] md:text-[25px] text-white font-semibold">What's App</h3>
-                <p className="text-[#d57315] font-semibold text-sm">+2348168016104</p>
+                <p className="text-[#d57315] font-semibold text-sm">+2349151151788</p>
               </span>
             </div>
 
@@ -63,7 +63,7 @@ const ContactSection = () => {
               <Mail className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
               <span className='flex flex-col text-left'>
                 <h3 className="text-[20px] md:text-[25px] text-white font-semibold">Email</h3>
-                <p className="text-[#d57315] font-semibold text-sm">@demo.com</p>
+                <p className="text-[#d57315] font-semibold text-sm">info@arkpoultry.com</p>
               </span>
             </div>
           </div>

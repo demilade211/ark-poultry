@@ -87,7 +87,7 @@ export default function ServicesOverview() {
                     </Link>
                   </div>
                   <div className={`${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                    <img src={service.image} alt={service.title} className="shadow-lg w-full h-[500px]" />
+                    <img src={service.image} alt={service.title} className="shadow-lg w-full h-auto" />
                   </div>
                 </div>
               </div>

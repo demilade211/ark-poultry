@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <Link href="/" className="inline-block mb-4">
               <span className="text-2xl border-l-8 pl-2 border-[#d57315] font-bold text-white">
-                Agri<span className="text-[#d57315]">Grow</span>
+                Ark<span className="text-[#d57315]">Poultry</span>
               </span>
             </Link>
             <p className="text-gray-300 mb-6">
@@ -163,7 +163,7 @@ const Footer = () => {
                   className="mr-2 mt-1 text-[#d57315] flex-shrink-0"
                 />
                 <span className="text-gray-300">
-                  123 Farm Road, Ife, Osun, Nigeria
+                  Lakonu Village, Off Oyo-Iseyin Road, Oyo Town Oyo State Nigeria
                 </span>
               </li>
               <li className="flex items-center">
@@ -171,21 +171,21 @@ const Footer = () => {
                   size={20}
                   className="mr-2 text-[#d57315] flex-shrink-0"
                 />
-                <span className="text-gray-300">(234) 81688016104</span>
+                <span className="text-gray-300">09151151788</span>
               </li>
               <li className="flex items-center">
                 <Mail
                   size={20}
                   className="mr-2 text-[#d57315] flex-shrink-0"
                 />
-                <span className="text-gray-300">info@company.com</span>
+                <span className="text-gray-300">info@arkpoultry.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Company. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} arkpoultry. All rights reserved.</p>
         </div>
       </div>
     </footer>

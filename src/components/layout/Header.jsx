@@ -53,7 +53,7 @@ const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="hidden md:flex items-center">
             <span className="text-2xl font-bold text-[#d57315]">
-              Poul<span className="text-green-500">try</span>
+              <span className="text-white bg-[#d57315] p-1">Ark</span><span className="text-[#d57315]">Poultry</span>
             </span>
           </Link>
 
@@ -93,9 +93,9 @@ const Header = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          <Link href="/" className="md:hidden flex items-center">
+          <Link href="/" className="flex md:hidden items-center">
             <span className="text-2xl font-bold text-[#d57315]">
-              Poul<span className="text-green-500">try</span>
+              <span className="text-white bg-[#d57315] p-1">Ark</span><span className="text-[#d57315]">Poultry</span>
             </span>
           </Link>
 

@@ -62,8 +62,8 @@ export default function ContactForm() {
                     <h4 className="text-lg font-bold text-gray-800 mb-1">
                       Our Location
                     </h4>
-                    <p className="text-gray-600">123 Farm Road, Ife</p>
-                    <p className="text-gray-600">Osun, Nigeria</p>
+                    <p className="text-gray-600">Lakonu Village, Off Oyo-Iseyin Road, Oyo Town</p>
+                    <p className="text-gray-600">Oyo State, Nigeria</p>
                   </div>
                 </div>
               </div>
@@ -76,8 +76,8 @@ export default function ContactForm() {
                     <h4 className="text-lg font-bold text-gray-800 mb-1">
                       Phone Number
                     </h4>
-                    <p className="text-gray-600">Main: (234) 81688016104</p>
-                    <p className="text-gray-600">Support: (234) 81688016104</p>
+                    <p className="text-gray-600">Main: 09151151788</p>
+                    <p className="text-gray-600">Support: 08062880195</p>
                   </div>
                 </div>
               </div>
@@ -90,8 +90,8 @@ export default function ContactForm() {
                     <h4 className="text-lg font-bold text-gray-800 mb-1">
                       Email Address
                     </h4>
-                    <p className="text-gray-600">info@comany.com</p>
-                    <p className="text-gray-600">support@comany.com</p>
+                    <p className="text-gray-600">info@arkpoultry.com</p>
+                    <p className="text-gray-600">support@arkpoultry.com</p>
                   </div>
                 </div>
               </div>
@@ -105,9 +105,8 @@ export default function ContactForm() {
                       Working Hours
                     </h4>
                     <p className="text-gray-600">
-                      Monday - Friday: 8:00 AM - 6:00 PM
+                      Weekdays 7am - 4pm
                     </p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
                   </div>
                 </div>
               </div>

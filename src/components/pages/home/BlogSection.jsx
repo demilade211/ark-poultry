@@ -76,7 +76,7 @@ const BlogSection = () => {
                   </div>
                 </div>
                 <h4 className="text-xl font-bold text-gray-800 mb-3">
-                  <Link href={post.link} className="hover:text-green-600 transition-colors">
+                  <Link href={post.link} className="hover:text-[#d57315] transition-colors">
                     {post.title}
                   </Link>
                 </h4>
@@ -103,7 +103,7 @@ const BlogSection = () => {
         {/* <div className="text-center mt-12">
           <Link
             href="/blog"
-            className="inline-block px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors"
+            className="inline-block px-8 py-3 bg-[#d57315] text-white font-medium rounded-md hover:bg-green-700 transition-colors"
           >
             View All Posts
           </Link>
