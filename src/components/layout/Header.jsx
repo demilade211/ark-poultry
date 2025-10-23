@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="hidden md:flex items-center bg-[#232323] pl-12 2xl:pl-4 justify-between h-13">
+      {/* <div className="hidden md:flex items-center bg-[#232323] pl-12 2xl:pl-4 justify-between h-13">
         <span className="flex">
           <p>Your Trusted 24 Hours Service Provider!</p>
         </span>
@@ -43,7 +43,7 @@ const Header = () => {
           </span>
           <span className="bg-[#d57315] flex gap-2 items-center font-semibold h-full pl-5 pr-12 22xl:pr-4"><Phone size={18} /> <p>Talk To Expert : 0 (143) 456 7897</p></span>
         </span>
-      </div>
+      </div> */}
 
       <header
         className={`transition-all duration-300 ${
@@ -71,7 +71,7 @@ const Header = () => {
               </Link>
             ))}
 
-            <div className="hidden md:flex gap-5 pl-5 border-l-2 border-gray-700 items-center">
+            {/* <div className="hidden md:flex gap-5 pl-5 border-l-2 border-gray-700 items-center">
               <Link
                 href="/contact"
                 className="text-gray-700 rounded-full bg-gray-100 p-3"
@@ -85,7 +85,7 @@ const Header = () => {
               >
                 <ClipboardList size={18} />
               </Link>
-            </div>
+            </div> */}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -100,7 +100,7 @@ const Header = () => {
           </Link>
 
           <div className="md:hidden flex gap-4 pl-5 items-center">
-            <Link
+            {/* <Link
               href="/contact"
               className="hidden md:flex text-gray-700 rounded-full bg-gray-100 p-2"
             >
@@ -112,7 +112,7 @@ const Header = () => {
               className="text-gray-700 rounded-full bg-gray-100 p-2"
             >
               <ClipboardList size={18} />
-            </Link>
+            </Link> */}
           </div>
         </div>
 

@@ -1,6 +1,7 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
-import { Award, Users, Clock, ThumbsUp } from 'lucide-react';
+import { Award, Users, Clock, ThumbsUp, Play } from 'lucide-react';
 
 const features = [
   {
@@ -26,29 +27,29 @@ const features = [
 ];
 
 const WhyChooseUsSection = () => {
-  return (
-    <section className="relative py-20 bg-[#232323]" id="why-choose-us">
+  const [isPlaying, setIsPlaying] = useState(false);
 
-      <div className="absolute top-0 left-0 h-full w-full lg:w-[70%] bg-[#d57315] z-0" />
+  return (
+    <section className="relative py-20 bg-[#232323] overflow-visible" id="why-choose-us">
+      <div className="absolute top-0 left-0 h-[90%] w-full lg:w-[55%] bg-[#d57315] z-0" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-          <div className="text-white">
-            <h2 className="text-md font-bold mb-2">WHY CHOOSE US</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          
+          {/* LEFT CONTENT */}
+          <div className="text-white flex flex-col justify-center py-8">
+            <h2 className="text-md font-bold mb-2">WHY CHOOSE US?</h2>
             <HomeSectionTitle 
               title="Your Trusted Partner in Agricultural Excellence"
               titleColor="white"
               bgColor="white"
               center={false}
             />
-            <p className="mb-8">
-              We combine innovative technology with sustainable practices to
-              deliver superior agricultural solutions. Our commitment to
-              excellence and customer satisfaction sets us apart in the
-              industry.
+            <p className="mb-8 text-white/90">
+              We provide marketing services to startups and small businesses to looking for a experience of their development, project and infrastructure
             </p>
 
+            {/* Grid with dividers */}
             <div className="grid grid-cols-1 sm:grid-cols-2">
               {features.map((feature, index) => (
                 <div
@@ -57,34 +58,50 @@ const WhyChooseUsSection = () => {
                     } ${index < 2 ? 'md:border-b border-white/30' : ''
                     }`}
                 >
-                  <div className='border-1 border-white p-4'>{feature.icon}</div>
+                  <div className="border-2 border-white/40 p-3 rounded">
+                    {feature.icon}
+                  </div>
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">
+                    <h4 className="text-lg font-semibold mb-1">
                       {feature.title}
                     </h4>
-                    <p className="text-white/90">{feature.description}</p>
+                    <p className="text-white/80 text-sm">{feature.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="relative z-10">
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
-              <video
-                className="w-full h-full object-cover"
-                controls
-              />
+          {/* RIGHT VIDEO - Extends beyond container */}
+          <div className="relative lg:top-[-130px] overflow-visible lg:-mr-4">
+            <div className="relative h-full min-h-[400px] lg:min-h-[600px] overflow-hidden shadow-2xl">
+              {!isPlaying ? (
+                <>
+                  <img
+                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=1000&fit=crop"
+                    alt="Agriculture"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20" />
+                  <button
+                    onClick={() => setIsPlaying(true)}
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-6 hover:bg-white/90 transition-all hover:scale-110"
+                  >
+                    <Play size={40} className="text-[#d57315] ml-1" fill="currentColor" />
+                  </button>
+                </>
+              ) : (
+                <iframe
+                  src="https://drive.google.com/file/d/1gaB57VKFiD7xASAk1CteOXFBAiv4ffk-/preview?autoplay=1"
+                  className="w-full h-full"
+                  allow="autoplay"
+                  allowFullScreen
+                  title="Why Choose Us Video"
+                />
+              )}
             </div>
           </div>
         </div>
-
-        {/* <div className="absolute shadow-2xl left-8 top-full translate-y-1/2 z-20 p-4">
-          <div className="bg-white px-8 py-6 border border-green-200 flex items-center">
-            <p className="text-5xl font-bold text-green-700">5</p>
-            <p className="text-gray-700 font-semibold">Years Of Experience</p>
-          </div>
-        </div> */}
       </div>
     </section>
   );
