@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
-import { Send, Handshake, UserStar, Award, ToolCase } from 'lucide-react';
+import { Send, Handshake, UserStar, Award, Egg } from 'lucide-react';
 const QuoteSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -123,7 +123,7 @@ const QuoteSection = () => {
 
       <div className='pt-45 lg:pt-65 pb-20 w-full px-4 bg-[#d57315]'>
         <div className='md:container flex-col lg:flex-row md:mx-auto flex justify-between items-center gap-4'>
-          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
+          <div className='flex items-center gap-2 p-5 bg-white/20 w-full'>
             <UserStar size={60} className="mr-2" />
             <span>
               <h3 className='text-[32px] font-semibold'>478</h3>
@@ -131,26 +131,26 @@ const QuoteSection = () => {
             </span>
           </div>
 
-          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
+          <div className='flex items-center gap-2 p-5 bg-white/20 w-full'>
             <Handshake size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-semibold'>478</h3>
-              <p className="font-semibold text-sm">Projects Done</p>
+              <h3 className='text-[32px] font-semibold'>50,000</h3>
+              <p className="font-semibold text-sm">raised chickens</p>
             </span>
           </div>
 
-          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
-            <ToolCase size={60} className="mr-2" />
+          <div className='flex items-center gap-2 p-5 bg-white/20 w-full'>
+            <Egg size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-semibold'>478</h3>
-              <p className="font-semibold text-sm">Happy Customers</p>
+              <h3 className='text-[32px] font-semibold'>15,000</h3>
+              <p className="font-semibold text-sm">weekly egg production</p>
             </span>
           </div>
 
-          <div className='flex items-center gap-3 p-10 bg-white/20 w-full'>
+          <div className='flex items-center gap-2 p-5 bg-white/20 w-full'>
             <Award size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-semibold'>478</h3>
+              <h3 className='text-[32px] font-semibold'>10</h3>
               <p className="font-semibold text-sm">Awards</p>
             </span>
           </div>
