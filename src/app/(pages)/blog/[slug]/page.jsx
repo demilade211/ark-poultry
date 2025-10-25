@@ -1,75 +1,27 @@
 import React from 'react';
 import Link from 'next/link';
 import { Calendar, MessageCircleMore, User, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { getBlogPostBySlug, blogPosts } from '@/lib/blogData';
+import { notFound } from 'next/navigation';
 
-// This would come from your blog data or API based on the slug
-const blogPost = {
-  id: 1,
-  title: 'The Benefits of Free-Range Chicken Farming',
-  content: `
-    <p>Free-range chicken farming has gained significant popularity in recent years, and for good reason. This farming practice offers numerous benefits for the chickens, the environment, and ultimately the consumers who enjoy high-quality poultry products.</p>
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
-    <h2>What is Free-Range Farming?</h2>
-    <p>Free-range farming allows chickens to roam freely outdoors for at least part of the day, rather than being confined to cages or cramped indoor spaces. This approach to poultry farming prioritizes animal welfare and natural behaviors.</p>
+export default function BlogPostPage({ params }) {
+  const blogPost = getBlogPostBySlug(params.slug);
 
-    <h2>Health Benefits for Chickens</h2>
-    <p>When chickens have access to outdoor spaces, they can engage in natural behaviors such as foraging, dust bathing, and pecking. This leads to:</p>
-    <ul>
-      <li>Improved physical health and stronger immune systems</li>
-      <li>Better bone density from increased movement</li>
-      <li>Reduced stress levels and behavioral problems</li>
-      <li>Access to natural sources of vitamins and minerals</li>
-    </ul>
+  if (!blogPost) {
+    notFound();
+  }
 
-    <h2>Superior Egg Quality</h2>
-    <p>Free-range chickens produce eggs that are nutritionally superior to those from caged hens. Studies have shown that free-range eggs contain:</p>
-    <ul>
-      <li>Higher levels of Omega-3 fatty acids</li>
-      <li>More vitamin A, E, and D</li>
-      <li>Better flavor and richer yolk color</li>
-      <li>Lower cholesterol content</li>
-    </ul>
+  // Get related posts (exclude current post)
+  const relatedPosts = blogPosts
+    .filter(post => post.id !== blogPost.id)
+    .slice(0, 2);
 
-    <h2>Environmental Sustainability</h2>
-    <p>Free-range farming practices contribute to environmental sustainability in several ways:</p>
-    <ul>
-      <li>Natural pest control as chickens forage for insects</li>
-      <li>Improved soil health through natural fertilization</li>
-      <li>Reduced need for chemical inputs and medications</li>
-      <li>Lower carbon footprint compared to intensive farming</li>
-    </ul>
-
-    <h2>Consumer Benefits</h2>
-    <p>Consumers who choose free-range poultry products can feel confident that they are supporting ethical farming practices while enjoying superior quality food. The taste difference is noticeable, and the health benefits make it a worthwhile investment.</p>
-
-    <h2>Conclusion</h2>
-    <p>Free-range chicken farming represents a return to more natural and sustainable agricultural practices. While it may cost slightly more, the benefits for animal welfare, environmental health, and product quality make it an excellent choice for conscientious consumers and responsible farmers alike.</p>
-  `,
-  image: '/images/img2.jpg',
-  date: 'May 15, 2023',
-  author: 'John Smith',
-  category: 'Farming Practices',
-  tags: ['Free-Range', 'Sustainability', 'Animal Welfare', 'Organic'],
-};
-
-const relatedPosts = [
-  {
-    id: 2,
-    title: 'Seasonal Recipe: Farm Fresh Egg Frittata',
-    image: '/images/img6.jpg',
-    date: 'June 2, 2023',
-    link: '/blog/seasonal-recipe-egg-frittata',
-  },
-  {
-    id: 3,
-    title: 'Our New Organic Feed Production Facility',
-    image: '/images/img7.jpg',
-    date: 'July 10, 2023',
-    link: '/blog/organic-feed-facility',
-  },
-];
-
-const BlogPostPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -242,7 +194,7 @@ const BlogPostPage = () => {
                 {relatedPosts.map((post) => (
                   <Link
                     key={post.id}
-                    href={post.link}
+                    href={`/blog/${post.slug}`}
                     className="flex gap-3 group"
                   >
                     <img
@@ -265,6 +217,4 @@ const BlogPostPage = () => {
       </div>
     </div>
   );
-};
-
-export default BlogPostPage;
+}

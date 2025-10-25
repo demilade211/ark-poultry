@@ -80,13 +80,6 @@ const HeroSection = () => {
                 >
                   {slide.buttonText}
                 </Link>
-
-                <Link
-                  href={slide.buttonLink}
-                  className="inline-block px-8 py-3 bg-transparent text-white font-medium hover:bg-[#d57315] transition-colors border-2 hover:border-[#d57315] border-white"
-                >
-                  {slide.buttonText}
-                </Link>
               </div>
             </div>
           </div>
