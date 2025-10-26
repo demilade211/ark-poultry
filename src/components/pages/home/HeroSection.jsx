@@ -8,29 +8,33 @@ const slides = [
   {
     id: 1,
     image: "/images/img3.jpg",
-    title: "Sustainable Agriculture for a Better Tomorrow",
+    title: "Empowering Smarter Farming Decisions",
     description:
-      "Innovative farming solutions that respect the environment while maximizing productivity.",
-    buttonText: "Our Services",
-    buttonLink: "/services",
+      "Our agricultural consultants help you boost productivity, improve livestock health, and maximize your farm’s potential with data-driven solutions.",
+    buttonText: "Get Started",
+    secondButtonText: "Our Services",
+    buttonLink: "/contact",
+    secondButtonLink: "/services",
   },
   {
     id: 2,
     image: "/images/img1.jpg",
-    title: "Expert Agricultural Consulting",
+    title: "Sustainable Agriculture for a Better Tomorrow",
     description:
-      "Our team of experts provides tailored solutions for all your farming needs.",
-    buttonText: "Learn More",
-    buttonLink: "/about",
+      "We provide innovative, eco-friendly farming solutions that enhance productivity, improve animal welfare, and support long-term food security.",
+    buttonText: "Explore Our Services",
+    secondButtonText: "Learn More",
+    buttonLink: "/services",
+    secondButtonLink: "/about",
   },
   {
     id: 3,
     image: "/images/img4.jpg",
-    title: "Modern Farming Technology",
+    title: "Empowering Farmers, Enhancing Poultry Production",
     description:
-      "Leveraging cutting-edge technology to improve yield and sustainability.",
-    buttonText: "Get a Quote",
-    buttonLink: "/contact",
+      "ArkPoultry Farm partners with farmers to deliver practical, hands-on solutions — from feed optimization to disease prevention — helping you grow healthier birds and a stronger business.",
+    buttonText: "Learn More",
+    buttonLink: "/about",
   },
 ];
 
@@ -80,6 +84,15 @@ const HeroSection = () => {
                 >
                   {slide.buttonText}
                 </Link>
+
+                {slide.secondButtonText && (
+                  <Link
+                    href={slide.secondButtonLink}
+                    className="inline-block px-8 py-3 bg-transparent text-white font-medium hover:bg-[#d57315] border-2 border-white hover:border-[#d57315] transition-colors"
+                  >
+                    {slide.secondButtonText}
+                  </Link>
+                )}
               </div>
             </div>
           </div>

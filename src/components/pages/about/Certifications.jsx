@@ -7,7 +7,7 @@ export default function Certifications() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <SectionTitle title="Our Certifications" subtitle="Meeting the highest standards" />
+              <SectionTitle title="Our Certifications" subtitle="Meeting the Highest Industry Standards" />
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <CheckCircleIcon size={24} className="text-[#d57315] mr-3 flex-shrink-0 mt-1" />
@@ -16,8 +16,7 @@ export default function Certifications() {
                       Certified Organic
                     </h4>
                     <p className="text-gray-600">
-                      Our farm meets all requirements for organic certification,
-                      ensuring our products are free from harmful chemicals.
+                      Our operations meet all recognized organic farming standards — ensuring our products are naturally raised and free from harmful additives.
                     </p>
                   </div>
                 </li>
@@ -49,11 +48,10 @@ export default function Certifications() {
                   <CheckCircleIcon size={24} className="text-[#d57315] mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="text-lg font-medium text-gray-800">
-                      USDA Inspected
+                      National Food Safety Inspected
                     </h4>
                     <p className="text-gray-600">
-                      Our processing facilities meet all USDA requirements for
-                      food safety and quality.
+                      Our processing facilities are regularly inspected and certified for food safety, hygiene, and quality assurance.
                     </p>
                   </div>
                 </li>
@@ -81,7 +79,7 @@ export default function Certifications() {
               <div className="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-5xl mb-2">✓</div>
-                  <p className="font-bold text-gray-800">USDA</p>
+                  <p className="font-bold text-gray-800">NAFDAC</p>
                 </div>
               </div>
             </div>

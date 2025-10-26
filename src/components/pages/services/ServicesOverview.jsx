@@ -13,43 +13,43 @@ const services = [{
   id: 'egg-production',
   icon: <Egg size={48} className="text-[#d57315]" />,
   title: 'Egg Production',
-  description: 'We produce premium quality eggs from free-range chickens. Our eggs are available in various sizes and quantities for both retail and wholesale customers.',
-  features: ['Free-range organic eggs', 'Various size options', 'Wholesale pricing available', 'Regular delivery schedules'],
+  description: 'Our premium-quality eggs come from well-nurtured hens raised under healthy and humane conditions. Whether you’re a retailer, wholesaler, or household customer, we guarantee freshness and consistency in every crate.',
+  features: ['Fresh, organically fed poultry eggs', 'Multiple size and packaging options', 'Competitive wholesale pricing', 'Reliable, scheduled deliveries'],
   image: '/images/img1.jpg'
 }, {
   id: 'meat-distribution',
   icon: <Drumstick size={48} className="text-[#d57315]" />,
   title: 'Meat Distribution',
-  description: 'We provide efficient meat distribution services to ensure that our high-quality poultry products reach our customers in a timely manner.',
-  features: ['Whole chickens and parts', 'Nationwide delivery network', 'Customizable delivery schedules', 'Real-time tracking and updates'],
+  description: 'We ensure that our farm-fresh poultry meat reaches you on time and in perfect condition. Our distribution network is built on efficiency, hygiene, and traceability from farm to table.',
+  features: ['Whole chickens and cut portions', 'Nationwide cold-chain delivery network', 'Flexible delivery schedules', 'Real-time tracking and updates'],
   image: '/images/img6.jpg'
 }, {
   id: 'poultry-supply',
   icon: <LineChart size={48} className="text-[#d57315]" />,
   title: 'Poultry Supply',
-  description: 'We provide high-quality chicks, feed, and equipment for farmers looking to start or expand their poultry operations.',
-  features: ['Various chicken breeds', 'Organic feed options', 'Equipment and supplies', 'Bulk discounts available'],
+  description: 'We support both new and experienced farmers with everything needed to run a successful poultry operation. From quality chicks to reliable feed and equipment, we are your trusted partner in farm growth.',
+  features: ['Diverse breeds of healthy day-old chicks', 'Premium organic and hybrid feed', 'Modern poultry equipment and accessories', 'Bulk discounts available'],
   image: '/images/img8.jpg'
 }, {
   id: 'farm-consulting',
   icon: <Tractor size={48} className="text-[#d57315]" />,
   title: 'Farm Consulting',
-  description: 'Our farm consulting services provide expert advice on best practices for poultry farming, including nutrition, housing, and biosecurity measures. We work closely with farmers to develop customized solutions that meet their specific needs.',
-  features: ['Nutrient management planning', 'Biosecurity assessments', 'Housing and equipment recommendations', 'Custom feeding programs'],
+  description: 'Our experts work closely with farmers to develop customized poultry management plans that drive efficiency and improve flock health. We combine technical expertise with practical insights for measurable results.',
+  features: ['Feed and nutrient management programs', 'Biosecurity and disease control planning', 'Housing design and environmental optimization', 'Productivity and profitability audits'],
   image: '/images/img13.jpg'
 }, {
-  id: 'organic-feed',
+  id: 'organic-feed-production',
   icon: <Activity size={48} className="text-[#d57315]" />,
-  title: 'Organic Feed',
-  description: 'We specialize in helping farmers transition to and succeed with organic farming practices. Our team provides guidance on certification, natural pest control, and sustainable growing methods.',
-  features: ['Organic certification assistance', 'Natural pest and disease management', 'Organic fertilization techniques', 'Sustainable crop rotation planning', 'Organic market development'],
+  title: 'Organic Feed Production',
+  description: 'Our organic feed solutions are developed to support natural growth and enhance bird health without harmful additives. We also help farmers transition to organic production systems with expert guidance and certification support.',
+  features: ['Organic feed formulation and supply', 'Natural pest and disease control methods', 'Organic certification and compliance assistance', 'Sustainable soil and nutrient management programs'],
   image: '/images/img7.jpg'
 }, {
   id: 'farm-tours',
   icon: <Binoculars size={48} className="text-[#d57315]" />,
   title: 'Farm Tours',
-  description: 'We offer comprehensive farm tours for individuals and groups interested in learning more about poultry farming practices. Our tours provide an in-depth look at our operations and sustainable farming techniques.',
-  features: ['Guided tours of our facilities', 'Educational resources on poultry farming', 'Q&A sessions with our experts', 'Opportunities to observe best practices in action'],
+  description: 'Experience modern poultry farming up close with our guided farm tours. Designed for students, families, and agricultural enthusiasts, our tours provide an engaging and educational look into sustainable poultry operations.',
+  features: ['Guided behind-the-scenes facility tours', 'Live demonstrations of sustainable farming', 'Q&A sessions with our experts', 'Educational resources and farm-to-table insights'],
   image: '/images/img4.jpg'
 }];
 
@@ -62,9 +62,7 @@ export default function ServicesOverview() {
               Comprehensive Agricultural Solutions
             </h2>
             <p className="max-w-2xl mx-auto text-gray-600">
-              We offer a wide range of services designed to help farmers improve
-              productivity, sustainability, and profitability through innovative
-              agricultural practices.
+              At ArkPoultry Farm, we provide a full range of services designed to help farmers enhance productivity, sustainability, and profitability. From quality poultry products to expert consulting, we bring innovation and excellence to every stage of your farming journey.
             </p>
           </div>
           {services.map((service, index) => <div key={service.id} id={service.id} className={`py-16 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>

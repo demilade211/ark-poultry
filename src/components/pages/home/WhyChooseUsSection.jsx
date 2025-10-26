@@ -40,13 +40,13 @@ const WhyChooseUsSection = () => {
           <div className="text-white flex flex-col justify-center py-8">
             <h2 className="text-md font-bold mb-2">WHY CHOOSE US?</h2>
             <HomeSectionTitle 
-              title="Your Trusted Partner in Agricultural Excellence"
+              title="Your Trusted Partner in Poultry and Agricultural Excellence"
               titleColor="white"
               bgColor="white"
               center={false}
             />
             <p className="mb-8 text-white/90">
-              We provide marketing services to startups and small businesses to looking for a experience of their development, project and infrastructure
+              At ArkPoultry Farm, we don’t just raise birds — we build trust, deliver quality, and champion sustainable farming. Here’s why farmers, partners, and communities choose us:
             </p>
 
             {/* Grid with dividers */}

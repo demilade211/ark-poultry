@@ -7,7 +7,7 @@ const blogPosts = [
   {
     id: 1,
     slug: 'future-sustainable-farming',
-    title: 'The Benefits of Free-Range Chicken Farming',
+    title: 'The Benefits of Modern Poultry Farming',
     excerpt: 'Discover how free-range farming practices improve chicken health, egg quality, and environmental sustainability.',
     image: '/images/img2.jpg',
     date: 'May 15, 2023',

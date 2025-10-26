@@ -6,27 +6,15 @@ export default function OurStory() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionTitle title="Our Story" subtitle="From humble beginnings to industry leader" />
+              <SectionTitle title="Our Story" subtitle="From Humble Beginnings to a Leader in Poultry Excellence" />
               <p className="text-gray-600 mb-6">
-                FarmFresh Poultry began in 1995 when the Doe family purchased a
-                small 50-acre property with the dream of creating a sustainable
-                chicken farm. Starting with just 200 chickens, John and Mary Doe
-                were committed to raising poultry in a humane, environmentally
-                responsible way.
+                ArkPoultry Farm was founded with a simple but powerful mission — to produce quality poultry products through ethical and sustainable farming practices. What started as a modest family-run venture with just a few hundred birds has now grown into one of the region’s most trusted providers of farm-fresh poultry and agricultural consulting services.
               </p>
               <p className="text-gray-600 mb-6">
-                Over the years, our farm has grown to span over 200 acres, but
-                our core values remain the same. We believe that happy, healthy
-                chickens produce the best eggs and meat, and that sustainable
-                farming practices are not just good for the environment, but
-                good for business too.
+                Over the years, our dedication to animal welfare, sustainable methods, and food quality has remained the foundation of our success. We believe that healthy, well-cared-for birds produce the best eggs and meat, and that responsible farming benefits both the community and the environment.
               </p>
               <p className="text-gray-600">
-                Today, we're proud to be a leading supplier of premium poultry
-                products to restaurants, grocery stores, and individual
-                consumers throughout the region. Our commitment to quality,
-                sustainability, and animal welfare continues to guide everything
-                we do.
+                Today, ArkPoultry proudly supplies premium poultry products to households, restaurants, and markets across the country — while continuing to innovate and set new standards for excellence in modern agriculture.
               </p>
             </div>
             <div className="overflow-hidden shadow-xl">

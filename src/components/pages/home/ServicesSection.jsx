@@ -16,14 +16,14 @@ const services = [
     icon: <Egg size={60} className="text-[#d57315]" />,
     title: "Egg Production",
     description:
-      "We produce premium quality eggs from free-range chickens. Our eggs are available in various sizes and quantities for both retail and wholesale customers.",
+      "We produce premium-quality eggs from healthy, free-range chickens. Available in various sizes and packaging options, our eggs are supplied to both retail and wholesale customers who value freshness and nutrition.",
     link: "/services#crop-management",
   },
   {
     icon: <Drumstick size={60} className="text-[#d57315]" />,
     title: "Meat Distribution",
     description:
-      "Our premium chicken meat is processed under strict hygiene standards and delivered fresh to restaurants, grocery stores, and individual customers.",
+      "Our farm-fresh chicken meat is processed under strict hygiene and safety standards, ensuring premium taste and quality. We supply restaurants, grocery stores, and individual customers with reliable, timely deliveries.",
     link: "/services#irrigation",
   },
   // {
@@ -37,7 +37,7 @@ const services = [
     icon: <Tractor size={60} className="text-[#d57315]" />,
     title: "Farm Consulting",
     description:
-      "Our experienced team provides expert advice on poultry farming practices, facility design, and sustainable operations.",
+      "Our team of experts offers personalized farm consulting services, including poultry management, facility design, feed optimization, and sustainable operation strategies to help you grow efficiently.",
     link: "/services#soil-testing",
   },
   // {
@@ -51,7 +51,7 @@ const services = [
     icon: <Binoculars size={60} className="text-[#d57315]" />,
     title: "Farm Tours",
     description:
-      "Educational tours of our facilities for schools, families, and interested individuals to learn about sustainable poultry farming.",
+      "Experience sustainable poultry farming firsthand with our educational farm tours. Ideal for schools, families, and agricultural enthusiasts, these tours offer an inside look into modern, ethical poultry production.",
     link: "/services#training",
   },
 ];
@@ -65,15 +65,13 @@ const ServicesSection = () => {
             OUR SERVICES
           </h2>
           <HomeSectionTitle
-            title="Comprehensive Poultry Services Tailored to Your Needs"
+            title="Comprehensive Poultry Solutions Tailored to Your Needs"
             titleColor="white"
             bgColor="[#d57315]"
             center={true}
           />
           <p className="max-w-2xl mx-auto text-[#ffffffbf]">
-            We offer a wide range of services designed to help farmers improve
-            productivity, sustainability, and profitability through innovative
-            agricultural practices.
+            At ArkPoultry Farm, we provide a full range of poultry services designed to enhance farm productivity, promote sustainability, and boost profitability through innovative agricultural practices and expert guidance.
           </p>
         </div>
 

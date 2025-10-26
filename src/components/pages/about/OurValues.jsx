@@ -15,9 +15,7 @@ export default function OurValues() {
                 Sustainability
               </h3>
               <p className="text-gray-600">
-                We are committed to environmentally responsible farming
-                practices that conserve resources and minimize waste. Our farm
-                operates on renewable energy and uses organic farming methods.
+                We operate with a deep respect for the environment, using eco-friendly and resource-efficient farming practices. From renewable energy systems to organic feed production, sustainability is at the heart of our operations.
               </p>
             </div>
             {/* Value 2 */}
@@ -29,9 +27,7 @@ export default function OurValues() {
                 Animal Welfare
               </h3>
               <p className="text-gray-600">
-                We believe in treating our chickens with care and respect. Our
-                birds have access to outdoor areas, natural light, and plenty of
-                space to move around freely.
+                Our birds are raised in clean, spacious, and stress-free environments. We ensure every chicken has access to natural light, open-air runs, and nutritious, chemical-free feed.
               </p>
             </div>
             {/* Value 3 */}
@@ -41,9 +37,7 @@ export default function OurValues() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Quality</h3>
               <p className="text-gray-600">
-                We never compromise on quality. From our organic feed to our
-                processing methods, every step is designed to ensure the highest
-                quality poultry products.
+                From hatch to harvest, we maintain the highest quality standards. Every product we deliver undergoes strict hygiene, safety, and nutritional checks to ensure excellence at every stage.
               </p>
             </div>
             {/* Value 4 */}
@@ -55,9 +49,7 @@ export default function OurValues() {
                 Community
               </h3>
               <p className="text-gray-600">
-                We're proud to support our local community through job creation,
-                educational programs, and partnerships with local businesses and
-                organizations.
+                We’re proud to empower our local community by creating jobs, supporting local suppliers, and providing agricultural education programs that promote self-sufficiency and innovation.
               </p>
             </div>
             {/* Value 5 */}
@@ -69,9 +61,7 @@ export default function OurValues() {
                 Transparency
               </h3>
               <p className="text-gray-600">
-                We believe in being open about our farming practices. That's why
-                we offer farm tours and share detailed information about how we
-                raise and care for our chickens.
+                We believe our customers have the right to know how their food is produced. That’s why we welcome farm visits and share honest insights into our processes and farming methods.
               </p>
             </div>
             {/* Value 6 */}
@@ -83,9 +73,7 @@ export default function OurValues() {
                 Innovation
               </h3>
               <p className="text-gray-600">
-                We continuously research and implement new technologies and
-                methods to improve our farming practices, efficiency, and
-                environmental impact.
+                We continuously research and adopt new technologies to improve farm efficiency, reduce waste, and enhance both product quality and animal well-being.
               </p>
             </div>
           </div>
