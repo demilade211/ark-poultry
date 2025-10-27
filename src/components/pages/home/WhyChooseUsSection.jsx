@@ -28,6 +28,25 @@ const features = [
 
 const WhyChooseUsSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  // const videoRef = useRef(null);
+
+  // const handlePlay = () => {
+  //   setIsPlaying(true);
+  //   if (videoRef.current) {
+  //     videoRef.current.play();
+  //   }
+  // };
+
+  // const cloudName = 'de6b5imnu';
+  
+  // const videoPublicId = 'YOUR_VIDEO_PUBLIC_ID'; // e.g., 'samples/sea-turtle' or 'my-videos/promo-video'
+  
+  // // Cloudinary video URL
+  // const videoUrl = `https://res.cloudinary.com/${cloudName}/video/upload/${videoPublicId}.mp4`;
+  
+  // // Cloudinary thumbnail URL (auto-generated from video)
+  // const thumbnailUrl = `https://res.cloudinary.com/${cloudName}/video/upload/so_0/${videoPublicId}.jpg`;
+
 
   return (
     <section className="relative py-20 bg-[#232323] overflow-visible" id="why-choose-us">

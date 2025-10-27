@@ -129,13 +129,13 @@ export default function BlogPostPage({ params }) {
             <div className="flex flex-wrap items-center gap-3 mb-8 pb-8 border-b">
               <span className="font-semibold text-gray-800">Tags:</span>
               {blogPost.tags.map((tag, index) => (
-                <Link
+                <span
                   key={index}
-                  href={`/blog?tag=${tag.toLowerCase()}`}
+                  // href={`/blog?tag=${tag.toLowerCase()}`}
                   className="px-3 py-1 bg-gray-100 text-gray-700 rounded hover:bg-[#d57315] hover:text-white transition-colors text-sm"
                 >
                   {tag}
-                </Link>
+                </span>
               ))}
             </div>
 
