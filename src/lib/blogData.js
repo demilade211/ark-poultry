@@ -2,52 +2,50 @@ export const blogPosts = [
   {
     id: 1,
     slug: 'future-sustainable-farming',
-    title: 'The Benefits of Free-Range Chicken Farming',
+    title: 'The Benefits of Modern Poultry Farming',
     excerpt: 'Discover how free-range farming practices improve chicken health, egg quality, and environmental sustainability.',
     content: `
-      <p>Free-range chicken farming has gained significant popularity in recent years, and for good reason. This farming practice offers numerous benefits for the chickens, the environment, and ultimately the consumers who enjoy high-quality poultry products.</p>
+      <p>Modern poultry farming has evolved beyond traditional methods, embracing innovation, sustainability, and animal welfare. Today’s farmers are implementing smarter, cleaner, and more efficient systems to produce high-quality poultry products that benefit both the environment and consumers.</p>
 
-      <h2>What is Free-Range Farming?</h2>
-      <p>Free-range farming allows chickens to roam freely outdoors for at least part of the day, rather than being confined to cages or cramped indoor spaces. This approach to poultry farming prioritizes animal welfare and natural behaviors.</p>
+      <h2>Healthier, Happier Birds</h2>
+      <p>Healthy chickens produce better meat and eggs. When birds are raised in clean, well-ventilated environments with access to proper nutrition and care, they develop:</p>
 
-      <h2>Health Benefits for Chickens</h2>
-      <p>When chickens have access to outdoor spaces, they can engage in natural behaviors such as foraging, dust bathing, and pecking. This leads to:</p>
       <ul>
-        <li>Improved physical health and stronger immune systems</li>
-        <li>Better bone density from increased movement</li>
-        <li>Reduced stress levels and behavioral problems</li>
-        <li>Access to natural sources of vitamins and minerals</li>
+        <li>Strong immune systems and healthy growth</li>
+        <li>Better bone structure from increased activity</li>
+        <li>Reduced stress and improved overall wellbeing</li>
+        <li>Natural access to essential vitamins and minerals</li>
       </ul>
 
-      <h2>Superior Egg Quality</h2>
-      <p>Free-range chickens produce eggs that are nutritionally superior to those from caged hens. Studies have shown that free-range eggs contain:</p>
+      <h2>Premium Product Quality</h2>
+      <p>Quality starts with how the chickens are raised. Proper nutrition, balanced feed, and humane care translate directly into superior products. Poultry raised under good management conditions often delivers:</p>
       <ul>
-        <li>Higher levels of Omega-3 fatty acids</li>
-        <li>More vitamin A, E, and D</li>
-        <li>Better flavor and richer yolk color</li>
-        <li>Lower cholesterol content</li>
+        <li>Better taste and texture</li>
+        <li>Richer color and natural flavor</li>
+        <li>Higher nutritional value, including essential proteins and vitamins</li>
+        <li>Safe, antibiotic-free food for consumers</li>
       </ul>
 
-      <h2>Environmental Sustainability</h2>
-      <p>Free-range farming practices contribute to environmental sustainability in several ways:</p>
+      <h2>Sustainable and Responsible Farming</h2>
+      <p>Sustainability is at the heart of modern agriculture. Through innovative waste management, renewable energy use, and soil enrichment practices, poultry farms like ArkPoultry are reducing their environmental footprint. Key benefits include:</p>
       <ul>
-        <li>Natural pest control as chickens forage for insects</li>
-        <li>Improved soil health through natural fertilization</li>
-        <li>Reduced need for chemical inputs and medications</li>
-        <li>Lower carbon footprint compared to intensive farming</li>
+        <li>Improved soil fertility through organic waste recycling</li>
+        <li>Reduced dependence on harmful chemicals</li>
+        <li>More efficient use of feed and water resources</li>
+        <li>A balanced ecosystem that supports long-term farming success</li>
       </ul>
 
-      <h2>Consumer Benefits</h2>
-      <p>Consumers who choose free-range poultry products can feel confident that they are supporting ethical farming practices while enjoying superior quality food. The taste difference is noticeable, and the health benefits make it a worthwhile investment.</p>
+      <h2>A Better Choice for Everyone</h2>
+      <p>Consumers today care about where their food comes from — and with good reason. Choosing poultry from farms that prioritize animal welfare, sustainability, and food quality means supporting a healthier planet and enjoying better-tasting products.</p>
 
       <h2>Conclusion</h2>
-      <p>Free-range chicken farming represents a return to more natural and sustainable agricultural practices. While it may cost slightly more, the benefits for animal welfare, environmental health, and product quality make it an excellent choice for conscientious consumers and responsible farmers alike.</p>
+      <p>Modern poultry farming represents the future of agriculture — ethical, efficient, and sustainable. At ArkPoultry, we’re committed to setting new standards in poultry production, ensuring that every chicken raised contributes to a healthier environment and a more responsible food system.</p>
     `,
     image: '/images/img2.jpg',
     date: 'May 15, 2023',
-    author: 'John Smith',
+    author: 'Olakunle Olabisi',
     category: 'Farming Practices',
-    tags: ['Free-Range', 'Sustainability', 'Animal Welfare', 'Organic'],
+    tags: ['Poultry Farming', 'Sustainability', 'Animal Welfare', 'Agriculture'],
   },
   {
     id: 2,
@@ -55,16 +53,21 @@ export const blogPosts = [
     title: 'Seasonal Recipe: Farm Fresh Egg Frittata',
     excerpt: 'Try this delicious recipe using our farm-fresh eggs and seasonal vegetables for a nutritious breakfast option.',
     content: `
-      <p>There's nothing quite like starting your day with a hearty, nutritious breakfast made with farm-fresh ingredients. This frittata recipe showcases the superior quality of our free-range eggs combined with seasonal vegetables.</p>
+      <p>There’s nothing quite like the taste of a farm-fresh egg — rich, golden, and packed with flavor. And one of the best ways to showcase that freshness is with a hearty Egg Frittata. Perfect for breakfast, brunch, or even dinner, this simple dish celebrates the goodness of natural ingredients straight from the farm.</p>
 
+      <h2>Why a Frittata?</h2>
+      <p>A frittata is an Italian-style omelet that’s both nutritious and versatile. It’s a great way to make use of seasonal vegetables, herbs, and dairy — all while letting the eggs take center stage. Whether you’re feeding a family or preparing a quick meal after a busy day on the farm, a frittata is a wholesome, satisfying choice.</p>
+      
       <h2>Ingredients</h2>
       <ul>
-        <li>8 large farm-fresh eggs</li>
-        <li>1/4 cup milk</li>
-        <li>1 cup seasonal vegetables (bell peppers, spinach, tomatoes)</li>
-        <li>1/2 cup cheese of your choice</li>
-        <li>Salt and pepper to taste</li>
-        <li>2 tablespoons olive oil</li>
+        <li>6 farm-fresh eggs</li>
+        <li>1/2 cup milk or cream</li>
+        <li>1 small onion, diced</li>
+        <li>1 bell pepper, chopped</li>
+        <li>1 cup fresh spinach (or any seasonal greens)</li>
+        <li>1/2 cup shredded cheese (cheddar, feta, or your favorite)</li>
+        <li>Salt and black pepper to taste</li>
+        <li>2 tablespoons olive oil or butter</li>
       </ul>
 
       <h2>Instructions</h2>
@@ -79,7 +82,7 @@ export const blogPosts = [
     `,
     image: '/images/img6.jpg',
     date: 'June 2, 2023',
-    author: 'Sarah Johnson',
+    author: 'Roemary Olabisi',
     category: 'Recipes',
     tags: ['Recipe', 'Eggs', 'Breakfast', 'Healthy'],
   },
@@ -89,28 +92,40 @@ export const blogPosts = [
     title: 'Our New Organic Feed Production Facility',
     excerpt: 'We\'re excited to announce the opening of our new organic feed production facility to support our sustainable farming practices.',
     content: `
-      <p>We're thrilled to announce a major milestone in our commitment to sustainable and organic farming: the opening of our new organic feed production facility!</p>
+      <p>At ArkPoultry Farm, we believe that quality poultry begins with quality feed. That’s why we’re proud to announce the launch of our new organic feed production facility, a major step forward in our commitment to sustainable, ethical, and high-quality poultry farming.</p>
 
-      <h2>Why We Built This Facility</h2>
-      <p>Control over our feed supply chain has always been important to us. By producing our own organic feed, we can ensure the highest quality nutrition for our chickens while maintaining our commitment to organic and sustainable practices.</p>
+      <h2>Raising the Standard for Poultry Nutrition</h2>
+      <p>The feed our birds consume directly affects their growth, health, and productivity — and ultimately, the quality of the eggs and meat we produce. Our new facility enables us to create 100% organic feed, free from synthetic additives, antibiotics, or harmful chemicals.
+      Every ingredient is locally sourced, ensuring freshness, traceability, and support for nearby farmers. The result? Happier, healthier birds and a superior product for our customers.</p>
 
-      <h2>What Makes Our Feed Special</h2>
+      <h2>What Makes Our Feed Different?</h2>
+      <p>Our organic feed blends are developed by experienced nutritionists and tested for optimal nutrient balance. Each batch is carefully formulated with:</p>
       <ul>
-        <li>100% organic ingredients, certified by recognized organizations</li>
-        <li>No GMOs or synthetic additives</li>
-        <li>Locally sourced grains when possible</li>
-        <li>Custom nutritional formulations for different life stages</li>
+        <li>Whole grains and natural proteins for steady growth and vitality.</li>
+        <li>Herbal additives and probiotics to strengthen immunity naturally.</li>
+        <li>No GMO ingredients or artificial enhancers, ensuring a clean and healthy diet for our flocks.</li>
+      </ul>
+      <p>This approach not only boosts flock performance but also reduces the environmental impact of our farming operations.</p>
+
+      <h2>Supporting a Sustainable Future</h2>
+      <p>By producing our feed in-house, we’re taking greater control over our supply chain and reducing dependency on external suppliers. This helps us maintain consistent quality, lower costs, and ensure that every product that reaches our customers aligns with our values of sustainability and integrity.
+      We’re also reducing waste by reusing by-products and promoting circular farming systems — ensuring that nothing goes to waste on our farm.
+      </p>
+
+      <h2>What This Means for Our Customers</h2>
+      <p>For our valued customers and partners, this means:</p>
+      <ul>
+        <li>Better quality eggs and meat with higher nutritional value.</li>
+        <li>A transparent, traceable feed process.</li>
+        <li>Greater confidence that your food comes from a responsible, eco-friendly source.</li>
       </ul>
 
-      <h2>Environmental Benefits</h2>
-      <p>Our new facility incorporates sustainable practices including solar power, water recycling systems, and minimal waste production. We're reducing our carbon footprint while improving feed quality.</p>
-
-      <h2>Impact on Our Products</h2>
-      <p>This investment means even better quality eggs and poultry for our customers. The superior nutrition translates directly to healthier chickens and more nutritious products.</p>
+      <h2>Looking Ahead</h2>
+      <p>The opening of our organic feed facility marks just one milestone in ArkPoultry’s ongoing journey toward agricultural innovation and sustainability. We remain dedicated to creating systems that benefit farmers, animals, and the environment — all while delivering excellence to your table.</p>
     `,
     image: '/images/img7.jpg',
     date: 'July 10, 2023',
-    author: 'Michael Brown',
+    author: 'Olakunle Olabisi',
     category: 'News & Updates',
     tags: ['Organic', 'Facility', 'Sustainability', 'Feed'],
   },

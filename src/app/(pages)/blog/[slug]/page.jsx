@@ -28,7 +28,7 @@ export default function BlogPostPage({ params }) {
       <section 
         className="relative h-[300px] md:h-[400px] bg-cover bg-center" 
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)), url(/images/img8.jpg)'
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)), url(/images/img4.jpg)'
         }}
       >
         <div className="absolute p-4 md:p-12 inset-0 flex items-center">
@@ -91,13 +91,39 @@ export default function BlogPostPage({ params }) {
             </h1>
 
             {/* Content */}
-            <div 
-              className="prose prose-lg text-gray-700 max-w-none mb-8"
-              dangerouslySetInnerHTML={{ __html: blogPost.content }}
-              style={{
-                lineHeight: '1.8',
-              }}
-            />
+            <>
+              <style dangerouslySetInnerHTML={{__html: `
+                .blog-content-area h2 {
+                  font-size: 1.875rem !important;
+                  font-weight: 700 !important;
+                  margin-top: 2rem !important;
+                  margin-bottom: 1rem !important;
+                  color: #1f2937 !important;
+                  line-height: 1.3 !important;
+                }
+                .blog-content-area p {
+                  margin-bottom: 1.25rem !important;
+                  font-size: 1.125rem !important;
+                  line-height: 1.8 !important;
+                  color: #4b5563 !important;
+                }
+                .blog-content-area ul {
+                  list-style-type: disc !important;
+                  margin-left: 2rem !important;
+                  margin-bottom: 1.5rem !important;
+                }
+                .blog-content-area li {
+                  margin-bottom: 0.5rem !important;
+                  font-size: 1.125rem !important;
+                  line-height: 1.8 !important;
+                  color: #4b5563 !important;
+                }
+              `}} />
+              <div 
+                className="blog-content-area mb-8"
+                dangerouslySetInnerHTML={{ __html: blogPost.content }}
+              />
+            </>
 
             {/* Tags */}
             <div className="flex flex-wrap items-center gap-3 mb-8 pb-8 border-b">
@@ -143,7 +169,10 @@ export default function BlogPostPage({ params }) {
                     About {blogPost.author}
                   </h3>
                   <p className="text-gray-600">
-                    Agricultural expert with over 15 years of experience in sustainable farming practices and poultry management. Passionate about sharing knowledge to help farmers adopt more ethical and efficient farming methods.
+                    Olakunle Olabisi is a seasoned agricultural expert with over 15 years of experience in sustainable farming, poultry management, and agribusiness development. His career has been dedicated to transforming agricultural systems through innovation, ethical practices, and farmer empowerment.
+                    A passionate advocate for modern, eco-friendly farming, Olakunle has worked with both smallholder farmers and commercial producers to improve productivity while preserving environmental balance. His expertise spans livestock nutrition, biosecurity management, and farm automation, helping farmers achieve consistent growth and profitability.
+                    Beyond his technical skill, Olakunle is deeply committed to education and community impact. He regularly leads workshops, training programs, and mentorship initiatives aimed at helping the next generation of farmers adopt smarter and more sustainable practices.
+                    Driven by a vision to make agriculture more profitable, humane, and future-ready, Olakunle continues to champion advancements that bridge the gap between traditional farming and modern agricultural innovation.
                   </p>
                 </div>
               </div>
