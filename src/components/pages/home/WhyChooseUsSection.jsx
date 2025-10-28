@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import HomeSectionTitle from "@/components/ui/HomeSectionTitle";
 import { Award, Users, Clock, ThumbsUp, Play } from 'lucide-react';
 
@@ -7,45 +7,39 @@ const features = [
   {
     icon: <Award size={60} className="text-white" />,
     title: 'Industry Expertise',
-    description: 'Great explorer of truth',
+    description: 'Hands-on experience in poultry management',
   },
   {
     icon: <Users size={60} className="text-white" />,
     title: 'Client-Focused Approach',
-    description: 'Best shaving Equipment',
+    description: 'Deliver solutions tailored to their success',
   },
   {
     icon: <Clock size={60} className="text-white" />,
     title: 'Timely Service',
-    description: 'Work with great products',
+    description: 'From supply to consultation',
   },
   {
     icon: <ThumbsUp size={60} className="text-white" />,
     title: 'Sustainable Practices',
-    description: 'Store your season crop',
+    description: 'Eco-friendly and ethical farming methods',
   },
 ];
 
 const WhyChooseUsSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  // const videoRef = useRef(null);
+  const videoRef = useRef(null);
 
-  // const handlePlay = () => {
-  //   setIsPlaying(true);
-  //   if (videoRef.current) {
-  //     videoRef.current.play();
-  //   }
-  // };
+  const handlePlay = () => {
+    setIsPlaying(true);
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
 
-  // const cloudName = 'de6b5imnu';
+  const videoUrl = `https://res.cloudinary.com/de6b5imnu/video/upload/v1761613528/arkpoultry_s_Video_-_Oct_28_2025-VEED_uzgjkl.mp4`;
   
-  // const videoPublicId = 'YOUR_VIDEO_PUBLIC_ID'; // e.g., 'samples/sea-turtle' or 'my-videos/promo-video'
-  
-  // // Cloudinary video URL
-  // const videoUrl = `https://res.cloudinary.com/${cloudName}/video/upload/${videoPublicId}.mp4`;
-  
-  // // Cloudinary thumbnail URL (auto-generated from video)
-  // const thumbnailUrl = `https://res.cloudinary.com/${cloudName}/video/upload/so_0/${videoPublicId}.jpg`;
+  const thumbnailUrl = `https://res.cloudinary.com/de6b5imnu/video/upload/so_0/arkpoultry_s_Video_-_Oct_28_2025-VEED_uzgjkl.jpg`;
 
 
   return (
@@ -97,26 +91,29 @@ const WhyChooseUsSection = () => {
               {!isPlaying ? (
                 <>
                   <img
-                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=1000&fit=crop"
+                    src={thumbnailUrl}
                     alt="Agriculture"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/20" />
                   <button
-                    onClick={() => setIsPlaying(true)}
+                    onClick={handlePlay}
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-6 hover:bg-white/90 transition-all hover:scale-110"
                   >
                     <Play size={40} className="text-[#d57315] ml-1" fill="currentColor" />
                   </button>
                 </>
               ) : (
-                <iframe
-                  src="https://drive.google.com/file/d/1gaB57VKFiD7xASAk1CteOXFBAiv4ffk-/preview?autoplay=1"
-                  className="w-full h-full"
-                  allow="autoplay"
-                  allowFullScreen
-                  title="Why Choose Us Video"
-                />
+                <video
+                  ref={videoRef}
+                  className="w-full h-full object-cover"
+                  controls
+                  autoPlay
+                  playsInline
+                >
+                  <source src={videoUrl} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               )}
             </div>
           </div>

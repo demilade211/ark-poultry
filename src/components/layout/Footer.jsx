@@ -178,7 +178,7 @@ const Footer = () => {
                   size={20}
                   className="mr-2 text-[#d57315] flex-shrink-0"
                 />
-                <span className="text-gray-300">info@arkpoultry.com</span>
+                <span className="text-gray-300">sales@arkPoultry.com</span>
               </li>
             </ul>
           </div>

@@ -90,8 +90,8 @@ export default function ContactForm() {
                     <h4 className="text-lg font-bold text-gray-800 mb-1">
                       Email Address
                     </h4>
-                    <p className="text-gray-600">info@arkpoultry.com</p>
-                    <p className="text-gray-600">support@arkpoultry.com</p>
+                    <p className="text-gray-600">sales@arkPoultry.com</p>
+                    {/* <p className="text-gray-600">support@arkPoultry.com</p> */}
                   </div>
                 </div>
               </div>
