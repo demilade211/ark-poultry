@@ -356,7 +356,7 @@ const QuoteSection = () => {
           <div className='flex items-center gap-2 p-5 bg-white/20 w-full'>
             <Handshake size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-semibold'>50,000</h3>
+              <h3 className='text-[32px] font-semibold'>50k+</h3>
               <p className="font-semibold text-sm">raised chickens</p>
             </span>
           </div>
@@ -364,7 +364,7 @@ const QuoteSection = () => {
           <div className='flex items-center gap-2 p-5 bg-white/20 w-full'>
             <Egg size={60} className="mr-2" />
             <span>
-              <h3 className='text-[32px] font-semibold'>50,000</h3>
+              <h3 className='text-[32px] font-semibold'>15k+</h3>
               <p className="font-semibold text-sm">weekly egg production</p>
             </span>
           </div>
