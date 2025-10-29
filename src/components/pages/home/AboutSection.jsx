@@ -41,7 +41,7 @@ const AboutSection = () => {
               <div className="flex items-center gap-2">
                 <MessageCircleMore className="text-[#d57315] mr-2 mt-1 flex-shrink-0" size={60} />
                 <span>
-                  <h3 className="text-[20px] md:text-[25px] font-[600] text-gray-700">+234 8168 0161 04</h3>
+                  <h3 className="text-[20px] md:text-[25px] font-[600] text-gray-700">+234 9151 1517 88</h3>
                   <p className="text-gray-400 font-semibold text-sm">Get A Free Estimate</p>
                 </span>
               </div>
