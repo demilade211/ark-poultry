@@ -291,9 +291,9 @@ const QuoteSection = () => {
                   {isSubmitting && (
                     <div className="mb-4 text-center text-gray-600">
                       {isWakingUp ? (
-                        <p className="text-sm">⏳ Connecting to email service...</p>
+                        <p className="text-sm">Connecting to email service...</p>
                       ) : (
-                        <p className="text-sm">📤 Sending your quote request...</p>
+                        <p className="text-sm">Sending your quote request...</p>
                       )}
                     </div>
                   )}
